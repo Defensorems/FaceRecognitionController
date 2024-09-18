@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Admin panel for face recognition application using Flask.
-"""
-
 from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, send_from_directory
-import os
 from werkzeug.utils import secure_filename
+from flask_wtf import CSRFProtect
+import os
 import logging
+from Main1 import GroupManager  # Импортируем класс из скрипта Main1
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'Images'
@@ -16,12 +13,11 @@ ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 
 logging.basicConfig(filename=app.config['LOG_FILE'], level=logging.INFO, format='%(asctime)s - %(message)s')
 
-program_status = {
-    "files_loaded": False,
-    "files": [],
-    "search_in_progress": False,
-    "results": []
-}
+# Инициализируем CSRF защиту
+csrf = CSRFProtect(app)
+
+# Глобальный объект для управления группами
+group_manager = GroupManager()
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -29,7 +25,71 @@ def allowed_file(filename):
 @app.route('/')
 def admin_panel():
     images = os.listdir(app.config['UPLOAD_FOLDER'])
-    return render_template('admin.html', status=program_status, images=images)
+    groups = group_manager.groups  # Получаем словарь групп из GroupManager
+
+    # Находим лица без группы
+    all_faces = set(images)
+    grouped_faces = set()
+    for members in groups.values():
+        grouped_faces.update(members)
+    
+    ungrouped_faces = all_faces - grouped_faces  # Лица, не входящие в группы
+
+    return render_template('admin.html', images=images, groups=groups, ungrouped_faces=ungrouped_faces)
+
+
+@app.route('/create_group', methods=['POST'])
+def create_group():
+    group_name = request.form.get('group_name')
+    if group_name:
+        if group_name in group_manager.groups:
+            flash(f'Group "{group_name}" already exists.')
+        else:
+            group_manager.create_group(group_name)
+            flash(f'Group "{group_name}" created successfully.')
+            logging.info(f'Group "{group_name}" created.')
+    else:
+        flash("Group name cannot be empty.")
+    return redirect(url_for('admin_panel'))
+
+@app.route('/delete_group/<group_name>', methods=['POST'])
+def delete_group(group_name):
+    if group_name in group_manager.groups:
+        group_manager.delete_group(group_name)
+        flash(f'Group "{group_name}" deleted successfully.')
+        logging.info(f'Group "{group_name}" deleted.')
+    else:
+        flash(f'Group "{group_name}" not found.')
+    return redirect(url_for('admin_panel'))
+
+@app.route('/rename_group', methods=['POST'])
+def rename_group():
+    old_name = request.form.get('old_name')
+    new_name = request.form.get('new_name')
+    
+    if old_name in group_manager.groups:
+        group_manager.rename_group(old_name, new_name)
+        flash(f'Group "{old_name}" renamed to "{new_name}".')
+        logging.info(f'Group "{old_name}" renamed to "{new_name}".')
+    else:
+        flash(f'Group "{old_name}" not found.')
+    return redirect(url_for('admin_panel'))
+
+@app.route('/add_face_to_group', methods=['POST'])
+def add_face_to_group():
+    group_name = request.form.get('group_name')
+    face_name = request.form.get('face_name')
+    
+    if group_name in group_manager.groups:
+        if face_name not in group_manager.groups[group_name]:
+            group_manager.add_face_to_group(face_name, group_name)
+            flash(f'Face "{face_name}" added to group "{group_name}".')
+            logging.info(f'Face "{face_name}" added to group "{group_name}".')
+        else:
+            flash(f'Face "{face_name}" is already in group "{group_name}".')
+    else:
+        flash(f'Group "{group_name}" not found.')
+    return redirect(url_for('admin_panel'))
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
@@ -55,11 +115,7 @@ def upload_files():
             flash(f'File "{file.filename}" is not allowed. Only .jpg, .jpeg, .png files are accepted.')
             logging.warning(f"Attempt to upload unsupported file: {file.filename}")
 
-    if file_paths:
-        program_status["files_loaded"] = True
-        program_status["files"] = file_paths
-        flash('Images successfully uploaded.')
-
+    flash('Images successfully uploaded.')
     return redirect(url_for('admin_panel'))
 
 @app.route('/delete_image/<filename>', methods=['POST'])
@@ -111,30 +167,32 @@ def view_logs():
 def serve_image(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-@app.route('/start_search', methods=['POST'])
-def start_search():
-    search_query = request.form.get('search_query')
+@app.route('/move_face_to_group', methods=['POST'])
+@csrf.exempt  # Исключение CSRF для этого маршрута, если нужно
+def move_face_to_group():
+    face_name = request.json.get('face_name')
+    new_group_name = request.json.get('group_name')
 
-    if not search_query:
-        flash('No search query provided.')
-        return redirect(url_for('admin_panel'))
+    logging.info(f"Received face_name: {face_name}, group_name: {new_group_name}")
 
-    if not program_status["files_loaded"]:
-        flash('No images loaded. Please upload files first.')
-        return redirect(url_for('admin_panel'))
+    if not face_name or not new_group_name:
+        return jsonify(success=False, message="Invalid data"), 400
 
-    program_status["search_in_progress"] = True
-    program_status["results"] = [
-        {"file": "example.jpg", "relevancy": 95, "top_matches": "Sample match content"}
-    ]
-    program_status["search_in_progress"] = False
+    current_group_name = group_manager.get_group_of_face(face_name)
 
-    flash('Search completed successfully.')
-    return redirect(url_for('admin_panel'))
+    if current_group_name and face_name in group_manager.groups.get(current_group_name, []):
+        group_manager.groups[current_group_name].remove(face_name)
 
-@app.route('/results', methods=['GET'])
-def get_results():
-    return jsonify(program_status["results"])
+    if new_group_name == 'ungrouped':
+        logging.info(f'Face "{face_name}" moved to ungrouped.')
+    else:
+        if new_group_name not in group_manager.groups:
+            group_manager.create_group(new_group_name)
+        group_manager.add_face_to_group(face_name, new_group_name)
+        logging.info(f'Face "{face_name}" moved to group "{new_group_name}".')
+
+    return jsonify(success=True)
+
 
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
