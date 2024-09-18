@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Face Recognition</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image-item {
+            margin: 10px;
+            text-align: center;
+        }
+        .image-item img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .image-actions {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Admin Panel</h1>
+    <hr>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-info" role="alert">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Image Upload Form -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Upload Images</h3>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('upload_files') }}" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="files">Select Images (.jpg, .jpeg, .png)</label>
+                    <input type="file" class="form-control-file" id="files" name="files" multiple>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Image Management Section -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Manage Images</h3>
+        </div>
+        <div class="card-body">
+            <div class="image-grid">
+                {% for image in images %}
+                <div class="image-item">
+                    <img src="{{ url_for('serve_image', filename=image) }}" alt="{{ image }}">
+                    <div class="image-actions">
+                        <form action="{{ url_for('rename_image') }}" method="POST" class="form-inline">
+                            <input type="hidden" name="old_name" value="{{ image }}">
+                            <input type="text" name="new_name" class="form-control form-control-sm mb-2 mr-sm-2" placeholder="New name (e.g., new_image.jpg)" required>
+                            <button type="submit" class="btn btn-warning btn-sm mb-2">Rename</button>
+                        </form>
+                        <form action="{{ url_for('delete_image', filename=image) }}" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Form (Placeholder for Future Logic) -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>Search Faces</h3>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('start_search') }}" method="POST">
+                <div class="form-group">
+                    <label for="search_query">Enter search query</label>
+                    <input type="text" class="form-control" id="search_query" name="search_query" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Logs Section -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3>View Logs</h3>
+        </div>
+        <div class="card-body">
+            <a href="{{ url_for('view_logs') }}" class="btn btn-info">View Logs</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
