@@ -488,3 +488,158 @@ jinja2.exceptions.TemplateNotFound: logs.html
 2024-09-18 13:40:27,222 - 127.0.0.1 - - [18/Sep/2024 13:40:27] "[36mGET /images/person2.jpg HTTP/1.1[0m" 304 -
 2024-09-18 13:40:27,225 - 127.0.0.1 - - [18/Sep/2024 13:40:27] "[36mGET /images/person3.jpg HTTP/1.1[0m" 304 -
 2024-09-18 13:45:06,999 - 127.0.0.1 - - [18/Sep/2024 13:45:06] "GET /logs HTTP/1.1" 200 -
+2024-09-18 14:00:35,683 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 14:00:35,684 - [33mPress CTRL+C to quit[0m
+2024-09-18 14:02:18,130 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 14:02:18,131 - [33mPress CTRL+C to quit[0m
+2024-09-18 14:02:24,632 - 127.0.0.1 - - [18/Sep/2024 14:02:24] "[32mGET / HTTP/1.1[0m" 302 -
+2024-09-18 14:02:24,640 - Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 86, in login
+    return render_template('login.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-09-18 14:02:24,642 - 127.0.0.1 - - [18/Sep/2024 14:02:24] "[35m[1mGET /login?next=/ HTTP/1.1[0m" 500 -
+2024-09-18 14:02:26,449 - Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 86, in login
+    return render_template('login.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-09-18 14:02:26,450 - 127.0.0.1 - - [18/Sep/2024 14:02:26] "[35m[1mGET /login?next=/ HTTP/1.1[0m" 500 -
+2024-09-18 14:03:01,908 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 14:03:01,909 - [33mPress CTRL+C to quit[0m
+2024-09-18 14:03:06,963 - Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 86, in login
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-09-18 14:03:06,964 - 127.0.0.1 - - [18/Sep/2024 14:03:06] "[35m[1mGET /login?next=/ HTTP/1.1[0m" 500 -
+2024-09-18 14:03:08,520 - 127.0.0.1 - - [18/Sep/2024 14:03:08] "[33mGET /login?next=/ HTTP/1.1[0m" 404 -
+2024-09-18 14:03:11,637 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "GET / HTTP/1.1" 200 -
+2024-09-18 14:03:11,659 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:11,667 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/2.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:11,670 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:11,675 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:11,676 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/person2.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:11,679 - 127.0.0.1 - - [18/Sep/2024 14:03:11] "[36mGET /images/person3.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:23,324 - 127.0.0.1 - - [18/Sep/2024 14:03:23] "GET /logs HTTP/1.1" 200 -
+2024-09-18 14:03:29,294 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "GET / HTTP/1.1" 200 -
+2024-09-18 14:03:29,316 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:29,331 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/2.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:29,334 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:29,338 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:29,343 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/person2.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:29,344 - 127.0.0.1 - - [18/Sep/2024 14:03:29] "[36mGET /images/person3.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:38,237 - Image person3.jpg deleted.
+2024-09-18 14:03:38,238 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[32mPOST /delete_image/person3.jpg HTTP/1.1[0m" 302 -
+2024-09-18 14:03:38,244 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "GET / HTTP/1.1" 200 -
+2024-09-18 14:03:38,293 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[36mGET /images/1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:38,302 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[36mGET /images/2.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:38,305 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:38,309 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 14:03:38,312 - 127.0.0.1 - - [18/Sep/2024 14:03:38] "[36mGET /images/person2.jpg HTTP/1.1[0m" 304 -
