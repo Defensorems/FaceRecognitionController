@@ -80,6 +80,11 @@
             {% endif %}
         {% endwith %}
 
+        <!-- Добавляем кнопку для перехода к логам -->
+        <div class="mb-4">
+            <a href="{{ url_for('view_logs') }}" class="btn btn-info">View Logs</a>
+        </div>
+
         <!-- Upload form -->
         <div class="mb-4">
             <h3>Upload Images</h3>

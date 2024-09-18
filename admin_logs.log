@@ -3183,3 +3183,340 @@ jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', 
 2024-09-18 16:35:31,073 - 127.0.0.1 - - [18/Sep/2024 16:35:31] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
 2024-09-18 16:35:31,084 - 127.0.0.1 - - [18/Sep/2024 16:35:31] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
 2024-09-18 16:35:31,088 - 127.0.0.1 - - [18/Sep/2024 16:35:31] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 17:01:33,277 - Программа запущена
+2024-09-18 17:01:33,278 - Группы успешно загружены из файла.
+2024-09-18 17:01:33,315 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 17:01:33,316 - [33mPress CTRL+C to quit[0m
+2024-09-18 17:01:36,178 - 127.0.0.1 - - [18/Sep/2024 17:01:36] "GET / HTTP/1.1" 200 -
+2024-09-18 17:01:36,190 - 127.0.0.1 - - [18/Sep/2024 17:01:36] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 17:01:36,194 - 127.0.0.1 - - [18/Sep/2024 17:01:36] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 17:01:36,207 - 127.0.0.1 - - [18/Sep/2024 17:01:36] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 17:01:36,211 - 127.0.0.1 - - [18/Sep/2024 17:01:36] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:36,446 - 127.0.0.1 - - [18/Sep/2024 18:53:36] "GET / HTTP/1.1" 200 -
+2024-09-18 18:53:36,465 - 127.0.0.1 - - [18/Sep/2024 18:53:36] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:36,470 - 127.0.0.1 - - [18/Sep/2024 18:53:36] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 18:53:36,480 - 127.0.0.1 - - [18/Sep/2024 18:53:36] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:36,484 - 127.0.0.1 - - [18/Sep/2024 18:53:36] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:56,314 - Received face_name: Ieka.png, group_name: g1
+2024-09-18 18:53:56,315 - Лицо Ieka.png добавлено в группу g1.
+2024-09-18 18:53:56,316 - Группы успешно сохранены в файл.
+2024-09-18 18:53:56,316 - Face "Ieka.png" moved to group "g1".
+2024-09-18 18:53:56,316 - 127.0.0.1 - - [18/Sep/2024 18:53:56] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 18:53:58,247 - Received face_name: Ieka.png, group_name: g1
+2024-09-18 18:53:58,247 - Лицо Ieka.png добавлено в группу g1.
+2024-09-18 18:53:58,247 - Группы успешно сохранены в файл.
+2024-09-18 18:53:58,247 - Face "Ieka.png" moved to group "g1".
+2024-09-18 18:53:58,249 - 127.0.0.1 - - [18/Sep/2024 18:53:58] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 18:53:58,830 - Received face_name: stepik.jpg, group_name: ungrouped
+2024-09-18 18:53:58,830 - Face "stepik.jpg" moved to ungrouped.
+2024-09-18 18:53:58,830 - 127.0.0.1 - - [18/Sep/2024 18:53:58] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 18:53:59,847 - 127.0.0.1 - - [18/Sep/2024 18:53:59] "GET / HTTP/1.1" 200 -
+2024-09-18 18:53:59,877 - 127.0.0.1 - - [18/Sep/2024 18:53:59] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:59,892 - 127.0.0.1 - - [18/Sep/2024 18:53:59] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:59,896 - 127.0.0.1 - - [18/Sep/2024 18:53:59] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:53:59,900 - 127.0.0.1 - - [18/Sep/2024 18:53:59] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 18:54:11,545 - Группа g2 создана.
+2024-09-18 18:54:11,546 - Группы успешно сохранены в файл.
+2024-09-18 18:54:11,546 - Group "g2" created.
+2024-09-18 18:54:11,547 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2024-09-18 18:54:11,554 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "GET / HTTP/1.1" 200 -
+2024-09-18 18:54:11,622 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:11,632 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:11,634 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:11,639 - 127.0.0.1 - - [18/Sep/2024 18:54:11] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 18:54:13,721 - Received face_name: Ieka.png, group_name: g2
+2024-09-18 18:54:13,721 - Лицо Ieka.png добавлено в группу g2.
+2024-09-18 18:54:13,721 - Группы успешно сохранены в файл.
+2024-09-18 18:54:13,721 - Face "Ieka.png" moved to group "g2".
+2024-09-18 18:54:13,722 - 127.0.0.1 - - [18/Sep/2024 18:54:13] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 18:54:15,441 - 127.0.0.1 - - [18/Sep/2024 18:54:15] "GET / HTTP/1.1" 200 -
+2024-09-18 18:54:15,486 - 127.0.0.1 - - [18/Sep/2024 18:54:15] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:15,497 - 127.0.0.1 - - [18/Sep/2024 18:54:15] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:15,502 - 127.0.0.1 - - [18/Sep/2024 18:54:15] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 18:54:15,503 - 127.0.0.1 - - [18/Sep/2024 18:54:15] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 19:04:24,106 - Received face_name: stepik.jpg, group_name: g1
+2024-09-18 19:04:24,106 - Лицо stepik.jpg добавлено в группу g1.
+2024-09-18 19:04:24,106 - Группы успешно сохранены в файл.
+2024-09-18 19:04:24,106 - Face "stepik.jpg" moved to group "g1".
+2024-09-18 19:04:24,107 - 127.0.0.1 - - [18/Sep/2024 19:04:24] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 19:04:25,476 - Received face_name: Ieka.png, group_name: g1
+2024-09-18 19:04:25,476 - Лицо Ieka.png добавлено в группу g1.
+2024-09-18 19:04:25,476 - Группы успешно сохранены в файл.
+2024-09-18 19:04:25,476 - Face "Ieka.png" moved to group "g1".
+2024-09-18 19:04:25,477 - 127.0.0.1 - - [18/Sep/2024 19:04:25] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 19:43:39,978 - Программа запущена
+2024-09-18 19:43:39,985 - Группы успешно загружены из файла.
+2024-09-18 19:43:40,029 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 19:43:40,030 - [33mPress CTRL+C to quit[0m
+2024-09-18 19:43:43,474 - 127.0.0.1 - - [18/Sep/2024 19:43:43] "GET / HTTP/1.1" 200 -
+2024-09-18 19:43:43,492 - 127.0.0.1 - - [18/Sep/2024 19:43:43] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:43,503 - 127.0.0.1 - - [18/Sep/2024 19:43:43] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:43,518 - 127.0.0.1 - - [18/Sep/2024 19:43:43] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:43,521 - 127.0.0.1 - - [18/Sep/2024 19:43:43] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 19:43:45,456 - Группа g2 удалена.
+2024-09-18 19:43:45,457 - Группы успешно сохранены в файл.
+2024-09-18 19:43:45,457 - Group "g2" deleted.
+2024-09-18 19:43:45,458 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "[32mPOST /delete_group/g2 HTTP/1.1[0m" 302 -
+2024-09-18 19:43:45,464 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "GET / HTTP/1.1" 200 -
+2024-09-18 19:43:45,524 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:45,528 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:45,531 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:45,534 - 127.0.0.1 - - [18/Sep/2024 19:43:45] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 19:43:56,173 - Image 1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg uploaded successfully.
+2024-09-18 19:43:56,174 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-09-18 19:43:56,180 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "GET / HTTP/1.1" 200 -
+2024-09-18 19:43:56,239 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "GET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1" 200 -
+2024-09-18 19:43:56,248 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:56,250 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:43:56,255 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 19:43:56,258 - 127.0.0.1 - - [18/Sep/2024 19:43:56] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 19:44:01,679 - Received face_name: 1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg, group_name: ungrouped
+2024-09-18 19:44:01,680 - Face "1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg" moved to ungrouped.
+2024-09-18 19:44:01,680 - 127.0.0.1 - - [18/Sep/2024 19:44:01] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 19:44:03,918 - Received face_name: 1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg, group_name: g1
+2024-09-18 19:44:03,918 - Лицо 1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg добавлено в группу g1.
+2024-09-18 19:44:03,918 - Группы успешно сохранены в файл.
+2024-09-18 19:44:03,918 - Face "1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg" moved to group "g1".
+2024-09-18 19:44:03,918 - 127.0.0.1 - - [18/Sep/2024 19:44:03] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 19:44:05,462 - Received face_name: 1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg, group_name: ungrouped
+2024-09-18 19:44:05,462 - Face "1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg" moved to ungrouped.
+2024-09-18 19:44:05,462 - 127.0.0.1 - - [18/Sep/2024 19:44:05] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-09-18 21:42:44,670 - Программа запущена
+2024-09-18 21:42:44,677 - Группы успешно загружены из файла.
+2024-09-18 21:42:44,716 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:42:44,718 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:42:47,040 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "GET / HTTP/1.1" 200 -
+2024-09-18 21:42:47,053 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:47,057 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:47,076 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:47,081 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:42:47,085 - 127.0.0.1 - - [18/Sep/2024 21:42:47] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:52,804 - 127.0.0.1 - - [18/Sep/2024 21:42:52] "GET /logs HTTP/1.1" 200 -
+2024-09-18 21:42:58,936 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "GET / HTTP/1.1" 200 -
+2024-09-18 21:42:58,958 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:58,970 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:58,981 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:42:58,982 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:42:58,983 - 127.0.0.1 - - [18/Sep/2024 21:42:58] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:44:31,717 - Программа запущена
+2024-09-18 21:44:31,717 - Группы успешно загружены из файла.
+2024-09-18 21:44:31,753 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:44:31,754 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:44:34,395 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "GET / HTTP/1.1" 200 -
+2024-09-18 21:44:34,421 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:44:34,423 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:44:34,433 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:44:34,435 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:44:34,439 - 127.0.0.1 - - [18/Sep/2024 21:44:34] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:44:35,591 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 164, in view_logs
+    with open('path_to_log_file.log', 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path_to_log_file.log'
+2024-09-18 21:44:35,593 - 127.0.0.1 - - [18/Sep/2024 21:44:35] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-09-18 21:45:37,398 - Программа запущена
+2024-09-18 21:45:37,399 - Группы успешно загружены из файла.
+2024-09-18 21:45:37,446 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:45:37,447 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:45:40,847 - 127.0.0.1 - - [18/Sep/2024 21:45:40] "GET /logs HTTP/1.1" 200 -
+2024-09-18 21:45:46,162 - 127.0.0.1 - - [18/Sep/2024 21:45:46] "GET /logs?page=112&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:45:49,673 - 127.0.0.1 - - [18/Sep/2024 21:45:49] "GET /logs?page=71&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:45:51,681 - 127.0.0.1 - - [18/Sep/2024 21:45:51] "GET /logs?page=70&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:45:56,200 - 127.0.0.1 - - [18/Sep/2024 21:45:56] "GET /logs?log_level=info&search_query= HTTP/1.1" 200 -
+2024-09-18 21:45:58,936 - 127.0.0.1 - - [18/Sep/2024 21:45:58] "GET /logs?log_level=warning&search_query= HTTP/1.1" 200 -
+2024-09-18 21:46:02,793 - 127.0.0.1 - - [18/Sep/2024 21:46:02] "GET /logs?log_level=error&search_query= HTTP/1.1" 200 -
+2024-09-18 21:46:05,392 - 127.0.0.1 - - [18/Sep/2024 21:46:05] "GET /logs?log_level=warning&search_query= HTTP/1.1" 200 -
+2024-09-18 21:46:07,873 - 127.0.0.1 - - [18/Sep/2024 21:46:07] "GET /logs?log_level=info&search_query= HTTP/1.1" 200 -
+2024-09-18 21:46:09,959 - 127.0.0.1 - - [18/Sep/2024 21:46:09] "GET /logs?log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:46:13,793 - 127.0.0.1 - - [18/Sep/2024 21:46:13] "GET /logs?page=112&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:09,949 - Программа запущена
+2024-09-18 21:48:09,950 - Группы успешно загружены из файла.
+2024-09-18 21:48:09,989 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:48:09,989 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:48:13,325 - 127.0.0.1 - - [18/Sep/2024 21:48:13] "GET /logs?page=112&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:15,322 - 127.0.0.1 - - [18/Sep/2024 21:48:15] "GET /logs?page=110&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:17,471 - 127.0.0.1 - - [18/Sep/2024 21:48:17] "GET /logs?page=1&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:19,161 - 127.0.0.1 - - [18/Sep/2024 21:48:19] "GET /logs?page=169&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:22,406 - 127.0.0.1 - - [18/Sep/2024 21:48:22] "GET /logs?page=167&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:25,228 - 127.0.0.1 - - [18/Sep/2024 21:48:25] "GET /logs?page=168&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:29,052 - 127.0.0.1 - - [18/Sep/2024 21:48:29] "GET /logs?page=169&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:48:32,823 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 195, in view_logs
+    show_first = page_numbers[0] > 1
+                 ~~~~~~~~~~~~^^^
+IndexError: range object index out of range
+2024-09-18 21:48:32,824 - 127.0.0.1 - - [18/Sep/2024 21:48:32] "[35m[1mGET /logs?log_level=info&search_query= HTTP/1.1[0m" 500 -
+2024-09-18 21:49:56,664 - Программа запущена
+2024-09-18 21:49:56,665 - Группы успешно загружены из файла.
+2024-09-18 21:49:56,758 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:49:56,759 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:49:59,665 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 162, in view_logs
+    with open('path_to_log_file.log', 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path_to_log_file.log'
+2024-09-18 21:49:59,666 - 127.0.0.1 - - [18/Sep/2024 21:49:59] "[35m[1mGET /logs?log_level=info&search_query= HTTP/1.1[0m" 500 -
+2024-09-18 21:50:03,162 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "GET / HTTP/1.1" 200 -
+2024-09-18 21:50:03,191 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:50:03,203 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:50:03,206 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:50:03,207 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:50:03,209 - 127.0.0.1 - - [18/Sep/2024 21:50:03] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:50:04,019 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 162, in view_logs
+    with open('path_to_log_file.log', 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path_to_log_file.log'
+2024-09-18 21:50:04,019 - 127.0.0.1 - - [18/Sep/2024 21:50:04] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-09-18 21:50:23,026 - Программа запущена
+2024-09-18 21:50:23,027 - Группы успешно загружены из файла.
+2024-09-18 21:50:23,077 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-09-18 21:50:23,078 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:50:26,835 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\defen\anaconda3\envs\FaceDetectionProj\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\defen\documents\python_projects\schoolfacedetection\adminka.py", line 162, in view_logs
+    with open('admin_logs.log', 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path_to_log_file.log'
+2024-09-18 21:50:26,836 - 127.0.0.1 - - [18/Sep/2024 21:50:26] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2024-09-18 21:50:27,737 - 127.0.0.1 - - [18/Sep/2024 21:50:27] "GET /logs HTTP/1.1" 200 -
+2024-09-18 21:50:30,216 - 127.0.0.1 - - [18/Sep/2024 21:50:30] "GET /logs?log_level=info&search_query= HTTP/1.1" 200 -
+2024-09-18 21:50:32,912 - 127.0.0.1 - - [18/Sep/2024 21:50:32] "GET /logs?log_level=warning&search_query= HTTP/1.1" 200 -
+2024-09-18 21:50:34,684 - 127.0.0.1 - - [18/Sep/2024 21:50:34] "GET /logs?log_level=error&search_query= HTTP/1.1" 200 -
+2024-09-18 21:50:37,170 - 127.0.0.1 - - [18/Sep/2024 21:50:37] "GET /logs?log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 21:50:41,863 - 127.0.0.1 - - [18/Sep/2024 21:50:41] "GET /logs?log_level=&search_query=500 HTTP/1.1" 200 -
+2024-09-18 21:50:48,714 - 127.0.0.1 - - [18/Sep/2024 21:50:48] "GET /logs?page=2&log_level=&search_query=500 HTTP/1.1" 200 -
+2024-09-18 21:50:50,352 - 127.0.0.1 - - [18/Sep/2024 21:50:50] "GET /logs?page=3&log_level=&search_query=500 HTTP/1.1" 200 -
+2024-09-18 21:50:56,063 - 127.0.0.1 - - [18/Sep/2024 21:50:56] "GET /logs?log_level=&search_query=500+ HTTP/1.1" 200 -
+2024-09-18 21:50:59,412 - 127.0.0.1 - - [18/Sep/2024 21:50:59] "GET /logs?page=2&log_level=&search_query=500+ HTTP/1.1" 200 -
+2024-09-18 21:51:01,877 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "GET / HTTP/1.1" 200 -
+2024-09-18 21:51:01,905 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:51:01,922 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:51:01,933 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:51:01,937 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:51:01,943 - 127.0.0.1 - - [18/Sep/2024 21:51:01] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:51:04,562 - 127.0.0.1 - - [18/Sep/2024 21:51:04] "GET /logs HTTP/1.1" 200 -
+2024-09-18 21:52:25,147 - Программа запущена
+2024-09-18 21:52:25,148 - Группы успешно загружены из файла.
+2024-09-18 21:52:25,156 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.65:5000
+2024-09-18 21:52:25,157 - [33mPress CTRL+C to quit[0m
+2024-09-18 21:52:27,355 - 127.0.0.1 - - [18/Sep/2024 21:52:27] "GET /logs HTTP/1.1" 200 -
+2024-09-18 21:53:18,358 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "GET / HTTP/1.1" 200 -
+2024-09-18 21:53:18,389 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:18,402 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:18,404 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:18,406 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:53:18,410 - 127.0.0.1 - - [18/Sep/2024 21:53:18] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:20,576 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "GET / HTTP/1.1" 200 -
+2024-09-18 21:53:20,593 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:20,605 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:20,615 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:20,619 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 21:53:20,621 - 127.0.0.1 - - [18/Sep/2024 21:53:20] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 21:53:35,663 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET / HTTP/1.1" 200 -
+2024-09-18 21:53:35,689 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET /images/Ant.jpg HTTP/1.1" 200 -
+2024-09-18 21:53:35,692 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET /images/person1.jpg HTTP/1.1" 200 -
+2024-09-18 21:53:35,704 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET /images/stepik.jpg HTTP/1.1" 200 -
+2024-09-18 21:53:35,707 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET /images/Ieka.png HTTP/1.1" 200 -
+2024-09-18 21:53:35,707 - 192.168.1.65 - - [18/Sep/2024 21:53:35] "GET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1" 200 -
+2024-09-18 21:53:36,206 - 192.168.1.65 - - [18/Sep/2024 21:53:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-18 22:09:37,613 - 192.168.1.65 - - [18/Sep/2024 22:09:37] "GET /logs HTTP/1.1" 200 -
+2024-09-18 22:09:40,243 - 192.168.1.65 - - [18/Sep/2024 22:09:40] "GET /logs?page=176&log_level=&search_query= HTTP/1.1" 200 -
+2024-09-18 22:11:40,543 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "GET / HTTP/1.1" 200 -
+2024-09-18 22:11:40,570 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-09-18 22:11:40,575 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-09-18 22:11:40,587 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "[36mGET /images/Ieka.png HTTP/1.1[0m" 304 -
+2024-09-18 22:11:40,590 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "[36mGET /images/1663139119_4-mykaleidoscope-ru-p-zloi-shrek-krasivo-6.jpg HTTP/1.1[0m" 304 -
+2024-09-18 22:11:40,593 - 192.168.1.65 - - [18/Sep/2024 22:11:40] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-09-18 22:24:51,448 - 192.168.1.65 - - [18/Sep/2024 22:24:51] "GET /logs HTTP/1.1" 200 -

@@ -153,15 +153,62 @@ def rename_image():
     
     return redirect(url_for('admin_panel'))
 
-@app.route('/logs')
+@app.route('/logs', methods=['GET'])
 def view_logs():
-    log_file_path = 'admin_logs.log'
-    if os.path.exists(log_file_path):
-        with open(log_file_path, 'r') as log_file:
-            log_content = log_file.read()
-    else:
-        log_content = "Log file not found."
-    return render_template('logs.html', logs=log_content)
+    log_level = request.args.get('log_level', '')
+    search_query = request.args.get('search_query', '')
+    page = request.args.get('page', 1, type=int)
+
+    with open('admin_logs.log', 'r') as file:
+        logs = file.readlines()
+
+    if log_level:
+        logs = [log for log in logs if log_level.upper() in log]
+
+    if search_query:
+        logs = [log for log in logs if search_query.lower() in log.lower()]
+
+    per_page = 20
+    total_logs = len(logs)
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_logs = logs[start:end]
+
+    total_pages = (total_logs + per_page - 1) // per_page
+    prev_page = page - 1 if page > 1 else None
+    next_page = page + 1 if page < total_pages else None
+
+    # Определение отображаемых страниц с сокращением
+    max_display_pages = 5
+    page_numbers = []
+
+    if total_pages > 0:  # Добавляем проверку на наличие страниц
+        if total_pages <= max_display_pages:
+            page_numbers = list(range(1, total_pages + 1))
+        else:
+            if page <= max_display_pages // 2 + 1:
+                page_numbers = list(range(1, max_display_pages + 1))
+            elif page >= total_pages - max_display_pages // 2:
+                page_numbers = list(range(total_pages - max_display_pages + 1, total_pages + 1))
+            else:
+                page_numbers = list(range(page - max_display_pages // 2, page + max_display_pages // 2 + 1))
+
+    show_first = len(page_numbers) > 0 and page_numbers[0] > 1
+    show_last = len(page_numbers) > 0 and page_numbers[-1] < total_pages
+
+    return render_template(
+        'logs.html', 
+        logs=paginated_logs, 
+        current_page=page, 
+        page_numbers=page_numbers, 
+        prev_page=prev_page, 
+        next_page=next_page, 
+        log_level=log_level, 
+        search_query=search_query,
+        total_pages=total_pages,
+        show_first=show_first,
+        show_last=show_last
+    )
 
 @app.route('/images/<filename>')
 def serve_image(filename):
