@@ -141,6 +141,7 @@ def recognize_faces(unknown_encodings, known_encodings, group_manager):
     return recognized_faces
 
 
+# Функция для расчета EAR (отношение сторон глаз)
 def eye_aspect_ratio(eye):
     A = dist.euclidean(eye[1], eye[5])
     B = dist.euclidean(eye[2], eye[4])
@@ -148,7 +149,7 @@ def eye_aspect_ratio(eye):
     ear = (A + B) / (2.0 * C)
     return ear
 
-
+# Оптимизированная функция для детекции движения головы
 def detect_head_movement(prev_landmarks, current_landmarks):
     if prev_landmarks is None:
         return False
@@ -158,7 +159,7 @@ def detect_head_movement(prev_landmarks, current_landmarks):
     logging.info(f"Движение головы: {distance > 2}")
     return distance > 2
 
-
+# Улучшенная функция анализа текстур лица
 def analyze_face_texture(img, face_location):
     top, right, bottom, left = face_location
     face_region = img[top:bottom, left:right]
@@ -167,6 +168,14 @@ def analyze_face_texture(img, face_location):
     logging.info(f"Текстура лица: {'живая' if laplacian_var > 100 else 'не живая'}")
     return laplacian_var > 100
 
+# Новый метод анализа бликов на лице
+def analyze_reflection(img, face_location):
+    top, right, bottom, left = face_location
+    face_region = img[top:bottom, left:right]
+    gray_face = cv2.cvtColor(face_region, cv2.COLOR_RGB2GRAY)
+    reflection_score = cv2.mean(gray_face)[0]  # Анализ среднего уровня яркости
+    logging.info(f"Отражение света: {'естественное' if reflection_score < 150 else 'поддельное'}")
+    return reflection_score < 150
 
 class FaceRecognitionApp(QWidget):
     def __init__(self):
@@ -192,6 +201,7 @@ class FaceRecognitionApp(QWidget):
         self.movement_detected = False
         self.prev_landmarks = None
         self.texture_analysis_result = False
+        self.reflection_analysis_result = False
         self.EYE_AR_THRESH = 0.2
         self.MIN_BLINKS = 1
 
@@ -226,6 +236,7 @@ class FaceRecognitionApp(QWidget):
         self.movement_detected = False
         self.prev_landmarks = None
         self.texture_analysis_result = False
+        self.reflection_analysis_result = False
         self.frame_timer.start(30)
         self.search_timer.start(5000)
 
@@ -237,7 +248,7 @@ class FaceRecognitionApp(QWidget):
 
         if filtered_faces:
             most_common_face = Counter(filtered_faces).most_common(1)[0][0]
-            if self.blink_counter < self.MIN_BLINKS and not self.movement_detected or not self.texture_analysis_result:
+            if self.blink_counter < self.MIN_BLINKS and not self.movement_detected or not self.texture_analysis_result or not self.reflection_analysis_result:
                 self.status_label.setText(f'Распознано: {most_common_face}, но лицо не является живым.')
                 logging.info(f'Распознано: {most_common_face}, но лицо не является живым.')
             else:
@@ -279,6 +290,7 @@ class FaceRecognitionApp(QWidget):
                     self.blink_counter += 1
 
                 self.texture_analysis_result = analyze_face_texture(img_rgb, face_locations[i])
+                self.reflection_analysis_result = analyze_reflection(img_rgb, face_locations[i])
 
         recognize = face_recognition.face_encodings(img_rgb)
 
