@@ -4,13 +4,9 @@ import cv2
 import face_recognition
 import numpy as np
 from scipy.spatial import distance as dist
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton
-from PyQt5.QtGui import QImage, QPixmap
-from PyQt5.QtCore import Qt, QTimer, pyqtSlot
 from collections import Counter
 import logging
 import json
-
 
 # Настройка логирования
 class FlushFileHandler(logging.FileHandler):
@@ -149,179 +145,148 @@ def eye_aspect_ratio(eye):
     ear = (A + B) / (2.0 * C)
     return ear
 
-# Оптимизированная функция для детекции движения головы
-def detect_head_movement(prev_landmarks, current_landmarks):
+# Функция для анализа текстуры с различными порогами
+def analyze_face_texture(img, face_location, texture_threshold):
+    top, right, bottom, left = face_location
+    face_region = img[top:bottom, left:right]
+    gray_face = cv2.cvtColor(face_region, cv2.COLOR_RGB2GRAY)
+    laplacian_var = cv2.Laplacian(gray_face, cv2.CV_64F).var()
+    return laplacian_var > texture_threshold
+
+# Функция для анализа бликов с различными порогами
+def analyze_reflection(img, face_location, reflection_threshold):
+    top, right, bottom, left = face_location
+    face_region = img[top:bottom, left:right]
+    gray_face = cv2.cvtColor(face_region, cv2.COLOR_RGB2GRAY)
+    reflection_score = cv2.mean(gray_face)[0]
+    return reflection_score < reflection_threshold
+
+# Функция для детекции морганий с различными порогами EAR
+def detect_blink(eye_landmarks, ear_threshold):
+    ear = eye_aspect_ratio(eye_landmarks)
+    return ear < ear_threshold
+
+# Функция для детекции движения головы с различными порогами смещения
+def detect_head_movement(prev_landmarks, current_landmarks, movement_threshold):
     if prev_landmarks is None:
         return False
     nose_prev = np.array(prev_landmarks['nose_bridge'][0])
     nose_curr = np.array(current_landmarks['nose_bridge'][0])
     distance = np.linalg.norm(nose_curr - nose_prev)
-    logging.info(f"Движение головы: {distance > 2}")
-    return distance > 2
+    return distance > movement_threshold
 
-# Улучшенная функция анализа текстур лица
-def analyze_face_texture(img, face_location):
-    top, right, bottom, left = face_location
-    face_region = img[top:bottom, left:right]
-    gray_face = cv2.cvtColor(face_region, cv2.COLOR_RGB2GRAY)
-    laplacian_var = cv2.Laplacian(gray_face, cv2.CV_64F).var()
-    logging.info(f"Текстура лица: {'живая' if laplacian_var > 100 else 'не живая'}")
-    return laplacian_var > 100
-
-# Новый метод анализа бликов на лице
-def analyze_reflection(img, face_location):
-    top, right, bottom, left = face_location
-    face_region = img[top:bottom, left:right]
-    gray_face = cv2.cvtColor(face_region, cv2.COLOR_RGB2GRAY)
-    reflection_score = cv2.mean(gray_face)[0]  # Анализ среднего уровня яркости
-    logging.info(f"Отражение света: {'естественное' if reflection_score < 150 else 'поддельное'}")
-    return reflection_score < 150
-
-class FaceRecognitionApp(QWidget):
-    def __init__(self):
-        super().__init__()
-
-        self.initUI()
-        self.cap = cv2.VideoCapture(0)
-        if not self.cap.isOpened():
-            self.status_label.setText("Ошибка: Камера не обнаружена.")
-            logging.error("Ошибка: Камера не обнаружена.")
-            return
-
-        self.group_manager = GroupManager()
-        self.known_faces = load_known_face_encodings('Images')
-
-        self.frame_timer = QTimer(self)
-        self.search_timer = QTimer(self)
-        self.frame_timer.timeout.connect(self.update_frame)
-        self.search_timer.timeout.connect(self.finish_face_search)
-
-        self.face_results = []
-        self.blink_counter = 0
-        self.movement_detected = False
-        self.prev_landmarks = None
-        self.texture_analysis_result = False
-        self.reflection_analysis_result = False
-        self.EYE_AR_THRESH = 0.2
-        self.MIN_BLINKS = 1
-
-    def initUI(self):
-        self.setWindowTitle('Face Recognition App')
-
-        self.video_label = QLabel(self)
-        self.video_label.setAlignment(Qt.AlignCenter)
-
-        self.status_label = QLabel('Нажмите "Начать", чтобы искать лица...', self)
-        self.status_label.setAlignment(Qt.AlignCenter)
-
-        self.start_button = QPushButton('Начать поиск', self)
-        self.start_button.clicked.connect(self.start_face_search)
-
-        self.quit_button = QPushButton('Выход', self)
-        self.quit_button.clicked.connect(self.close_application)
-
-        self.layout = QVBoxLayout()
-        self.layout.addWidget(self.video_label)
-        self.layout.addWidget(self.status_label)
-        self.layout.addWidget(self.start_button)
-        self.layout.addWidget(self.quit_button)
-
-        self.setLayout(self.layout)
-
-    def start_face_search(self):
-        self.status_label.setText("Поиск лиц в процессе...")
-        logging.info("Поиск лиц начат.")
-        self.face_results.clear()
-        self.blink_counter = 0
-        self.movement_detected = False
-        self.prev_landmarks = None
-        self.texture_analysis_result = False
-        self.reflection_analysis_result = False
-        self.frame_timer.start(30)
-        self.search_timer.start(5000)
-
-    def finish_face_search(self):
-        self.frame_timer.stop()
-        self.search_timer.stop()
-
-        filtered_faces = [face for face in self.face_results if face != "Unknown"]
-
-        if filtered_faces:
-            most_common_face = Counter(filtered_faces).most_common(1)[0][0]
-            if self.blink_counter < self.MIN_BLINKS and not self.movement_detected or not self.texture_analysis_result or not self.reflection_analysis_result:
-                self.status_label.setText(f'Распознано: {most_common_face}, но лицо не является живым.')
-                logging.info(f'Распознано: {most_common_face}, но лицо не является живым.')
-            else:
-                self.status_label.setText(f'Распознано: {most_common_face}, лицо живое.')
-                logging.info(f'Распознано: {most_common_face}, лицо живое.')
-        else:
-            self.status_label.setText('Распознано: Unknown или лицо не является живым')
-            logging.info('Распознано: Unknown или лицо не является живым')
-
-    @pyqtSlot()
-    def update_frame(self):
-        success, img = self.cap.read()
-
-        if not success:
-            self.status_label.setText("Ошибка при получении изображения")
-            logging.error("Ошибка при получении изображения")
-            return
-
-        img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-        face_landmarks_list = face_recognition.face_landmarks(img_rgb)
-        face_locations = face_recognition.face_locations(img_rgb)
-
-        if face_landmarks_list:
-            for i, face_landmarks in enumerate(face_landmarks_list):
-                if detect_head_movement(self.prev_landmarks, face_landmarks):
-                    self.movement_detected = True
-                self.prev_landmarks = face_landmarks
-
-                left_eye = face_landmarks['left_eye']
-                right_eye = face_landmarks['right_eye']
-
-                left_eye_ratio = eye_aspect_ratio(left_eye)
-                right_eye_ratio = eye_aspect_ratio(right_eye)
-
-                avg_eye_ratio = (left_eye_ratio + right_eye_ratio) / 2.0
-
-                if avg_eye_ratio < self.EYE_AR_THRESH:
-                    self.blink_counter += 1
-
-                self.texture_analysis_result = analyze_face_texture(img_rgb, face_locations[i])
-                self.reflection_analysis_result = analyze_reflection(img_rgb, face_locations[i])
-
-        recognize = face_recognition.face_encodings(img_rgb)
-
-        if recognize:
-            results = recognize_faces(recognize, self.known_faces, self.group_manager)
-            self.face_results.extend(results)
-        else:
-            self.face_results.append("Unknown")
-
-        h, w, ch = img_rgb.shape
-        bytes_per_line = ch * w
-        convert_to_qt_format = QImage(img_rgb.data, w, h, bytes_per_line, QImage.Format_RGB888)
-        pixmap = QPixmap.fromImage(convert_to_qt_format)
-        self.video_label.setPixmap(pixmap)
-
-    def close_application(self):
-        self.frame_timer.stop()
-        self.search_timer.stop()
-        self.cap.release()
-        cv2.destroyAllWindows()
-        logging.info("Приложение закрыто")
-        self.close()
-        logging.shutdown()
+# Функция для определения "живого" лица с уникальными уровнями проверки живости
+def is_live_face(img, face_location, face_landmarks, prev_landmarks=None, liveness_level=1):
+    texture_result = reflection_result = blink_detected = head_movement_detected = True
+    
+    if liveness_level == 1:
+        texture_result = analyze_face_texture(img, face_location, texture_threshold=50)  # Мягкий порог для текстуры
+        logging.info(f"Результат анализа текстуры на уровне 1: {'живое' if texture_result else 'поддельное'}")
+        
+    if liveness_level == 2:
+        texture_result = analyze_face_texture(img, face_location, texture_threshold=100)  # Строгий порог для текстуры
+        logging.info(f"Результат анализа текстуры на уровне 2: {'живое' if texture_result else 'поддельное'}")
+    
+    if liveness_level == 3:
+        reflection_result = analyze_reflection(img, face_location, reflection_threshold=180)  # Мягкий порог для бликов
+        logging.info(f"Результат анализа бликов на уровне 3: {'естественное' if reflection_result else 'поддельное'}")
+        
+    if liveness_level == 4:
+        reflection_result = analyze_reflection(img, face_location, reflection_threshold=150)  # Строгий порог для бликов
+        logging.info(f"Результат анализа бликов на уровне 4: {'естественное' if reflection_result else 'поддельное'}")
+    
+    if liveness_level == 5:
+        left_eye = face_landmarks['left_eye']
+        right_eye = face_landmarks['right_eye']
+        blink_detected = detect_blink(left_eye, ear_threshold=0.3) or detect_blink(right_eye, ear_threshold=0.3)  # Мягкий порог EAR
+        logging.info(f"Моргание на уровне 5: {'обнаружено' if blink_detected else 'не обнаружено'}")
+    
+    if liveness_level == 6:
+        left_eye = face_landmarks['left_eye']
+        right_eye = face_landmarks['right_eye']
+        blink_detected = detect_blink(left_eye, ear_threshold=0.2) or detect_blink(right_eye, ear_threshold=0.2)  # Строгий порог EAR
+        logging.info(f"Моргание на уровне 6: {'обнаружено' if blink_detected else 'не обнаружено'}")
+    
+    if liveness_level == 7:
+        head_movement_detected = detect_head_movement(prev_landmarks, face_landmarks, movement_threshold=3)  # Мягкий порог движения
+        logging.info(f"Движение головы на уровне 7: {'обнаружено' if head_movement_detected else 'не обнаружено'}")
+    
+    if liveness_level == 8:
+        head_movement_detected = detect_head_movement(prev_landmarks, face_landmarks, movement_threshold=2)  # Строгий порог движения
+        logging.info(f"Движение головы на уровне 8: {'обнаружено' if head_movement_detected else 'не обнаружено'}")
+    
+    if liveness_level == 9:
+        # Комплексная проверка с мягкими порогами
+        texture_result = analyze_face_texture(img, face_location, texture_threshold=50)
+        reflection_result = analyze_reflection(img, face_location, reflection_threshold=180)
+        left_eye = face_landmarks['left_eye']
+        right_eye = face_landmarks['right_eye']
+        blink_detected = detect_blink(left_eye, ear_threshold=0.3) or detect_blink(right_eye, ear_threshold=0.3)
+        head_movement_detected = detect_head_movement(prev_landmarks, face_landmarks, movement_threshold=3)
+    
+    if liveness_level == 10:
+        # Комплексная проверка с жесткими порогами
+        texture_result = analyze_face_texture(img, face_location, texture_threshold=100)
+        reflection_result = analyze_reflection(img, face_location, reflection_threshold=150)
+        left_eye = face_landmarks['left_eye']
+        right_eye = face_landmarks['right_eye']
+        blink_detected = detect_blink(left_eye, ear_threshold=0.2) or detect_blink(right_eye, ear_threshold=0.2)
+        head_movement_detected = detect_head_movement(prev_landmarks, face_landmarks, movement_threshold=2)
+    
+    if not (texture_result and reflection_result and blink_detected and head_movement_detected):
+        logging.info(f"Лицо на уровне {liveness_level} не является живым.")
+        return False
+    
+    logging.info(f"Лицо распознано как живое на уровне {liveness_level}.")
+    return True
 
 
 def main():
-    app = QApplication(sys.argv)
-    face_recognition_app = FaceRecognitionApp()
-    face_recognition_app.show()
-    sys.exit(app.exec_())
+    cap = cv2.VideoCapture(0)
+    if not cap.isOpened():
+        logging.error("Ошибка: Камера не обнаружена.")
+        return
 
+    known_faces = load_known_face_encodings('Images')
+    group_manager = GroupManager()
+
+    prev_landmarks = None
+    liveness_level = 9
+
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            logging.error("Ошибка при получении изображения с камеры.")
+            break
+
+        rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        face_locations = face_recognition.face_locations(rgb_frame)
+        face_landmarks_list = face_recognition.face_landmarks(rgb_frame)
+
+        if face_landmarks_list:
+            for i, face_landmarks in enumerate(face_landmarks_list):
+                face_location = face_locations[i]
+
+                # Проверка на живость лица с учетом уровня
+                is_live = is_live_face(rgb_frame, face_location, face_landmarks, prev_landmarks, liveness_level)
+                prev_landmarks = face_landmarks
+
+                if is_live:
+                    logging.info("Лицо является живым.")
+                else:
+                    logging.info("Лицо не является живым.")
+        
+        # Отображение видеопотока
+        for (top, right, bottom, left) in face_locations:
+            cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+
+        cv2.imshow("Video", frame)
+
+        logging.info(f"Текущий уровень проверки живости: {liveness_level}")
+
+    cap.release()
+    cv2.destroyAllWindows()
+    logging.info("Программа завершена.")
 
 if __name__ == "__main__":
     main()
