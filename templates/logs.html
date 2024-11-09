@@ -28,14 +28,22 @@
                     <label for="log-level">Filter by Log Level:</label>
                     <select class="form-control" id="log-level" name="log_level">
                         <option value="">All</option>
-                        <option value="info">Info</option>
-                        <option value="warning">Warning</option>
-                        <option value="error">Error</option>
+                        <option value="info" {% if log_level == 'info' %}selected{% endif %}>Info</option>
+                        <option value="warning" {% if log_level == 'warning' %}selected{% endif %}>Warning</option>
+                        <option value="error" {% if log_level == 'error' %}selected{% endif %}>Error</option>
                     </select>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="search-query">Search Logs:</label>
-                    <input type="text" class="form-control" id="search-query" name="search_query" placeholder="Enter keyword...">
+                    <input type="text" class="form-control" id="search-query" name="search_query" placeholder="Enter keyword..." value="{{ search_query }}">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="log-file">Select Log File:</label>
+                    <select class="form-control" id="log-file" name="log_file">
+                        {% for log_file in log_files %}
+                            <option value="{{ log_file }}" {% if log_file == selected_log_file %}selected{% endif %}>{{ log_file }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
                 <div class="col-md-2 mb-3 align-self-end">
                     <button type="submit" class="btn btn-primary">Apply Filters</button>
@@ -59,54 +67,49 @@
         </div>
 
         <!-- Пагинация -->
-		<nav aria-label="Log pagination">
-			<ul class="pagination justify-content-center">
-				<!-- Кнопка предыдущей страницы -->
-				{% if prev_page %}
-					<li class="page-item">
-						<a class="page-link" href="{{ url_for('view_logs', page=prev_page, log_level=log_level, search_query=search_query) }}" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-						</a>
-					</li>
-				{% endif %}
+        <nav aria-label="Log pagination">
+            <ul class="pagination justify-content-center">
+                {% if prev_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=prev_page, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
 
-				<!-- Ссылка на первую страницу, если она не входит в диапазон отображаемых страниц -->
-				{% if show_first %}
-					<li class="page-item">
-						<a class="page-link" href="{{ url_for('view_logs', page=1, log_level=log_level, search_query=search_query) }}">1</a>
-					</li>
-					<li class="page-item disabled">
-						<span class="page-link">...</span>
-					</li>
-				{% endif %}
+                {% if show_first %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=1, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">1</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                {% endif %}
 
-				<!-- Отображаемые номера страниц -->
-				{% for page_num in page_numbers %}
-					<li class="page-item {% if page_num == current_page %}active{% endif %}">
-						<a class="page-link" href="{{ url_for('view_logs', page=page_num, log_level=log_level, search_query=search_query) }}">{{ page_num }}</a>
-					</li>
-				{% endfor %}
+                {% for page_num in page_numbers %}
+                    <li class="page-item {% if page_num == current_page %}active{% endif %}">
+                        <a class="page-link" href="{{ url_for('view_logs', page=page_num, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">{{ page_num }}</a>
+                    </li>
+                {% endfor %}
 
-				<!-- Ссылка на последнюю страницу, если она не входит в диапазон отображаемых страниц -->
-				{% if show_last %}
-					<li class="page-item disabled">
-						<span class="page-link">...</span>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="{{ url_for('view_logs', page=total_pages, log_level=log_level, search_query=search_query) }}">{{ total_pages }}</a>
-					</li>
-				{% endif %}
+                {% if show_last %}
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=total_pages, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">{{ total_pages }}</a>
+                    </li>
+                {% endif %}
 
-				<!-- Кнопка следующей страницы -->
-				{% if next_page %}
-					<li class="page-item">
-						<a class="page-link" href="{{ url_for('view_logs', page=next_page, log_level=log_level, search_query=search_query) }}" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-						</a>
-					</li>
-				{% endif %}
-			</ul>
-		</nav>
+                {% if next_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=next_page, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
 
         <!-- Кнопка возврата -->
         <a href="{{ url_for('admin_panel') }}" class="btn btn-primary mt-4">Back to Admin Panel</a>

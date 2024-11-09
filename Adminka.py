@@ -3,43 +3,64 @@ from werkzeug.utils import secure_filename
 from flask_wtf import CSRFProtect
 import os
 import logging
-from Main1 import GroupManager  # Импортируем класс из скрипта Main1
+from Main1 import GroupManager  # Import GroupManager class from Main1
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'Images'
-app.config['LOG_FILE'] = 'admin_logs.log'
-app.secret_key = 'supersecretkey'
-ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
+app.config['UPLOAD_FOLDER'] = 'Images'  # Folder where uploaded images will be stored
+app.config['LOG_FILE'] = 'admin_logs.log'  # Log file location
+app.secret_key = 'supersecretkey'  # Secret key for CSRF protection
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}  # Allowed image formats
 
-logging.basicConfig(filename=app.config['LOG_FILE'], level=logging.INFO, format='%(asctime)s - %(message)s')
+# Set up logging to both console and file, ensuring it works across platforms
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler = logging.FileHandler(app.config['LOG_FILE'])
+file_handler.setFormatter(log_formatter)
+file_handler.setLevel(logging.INFO)
 
-# Инициализируем CSRF защиту
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(log_formatter)
+console_handler.setLevel(logging.INFO)
+
+logging.getLogger().addHandler(file_handler)
+logging.getLogger().addHandler(console_handler)
+
+# Initialize CSRF protection
 csrf = CSRFProtect(app)
 
-# Глобальный объект для управления группами
+# Global object to manage groups
 group_manager = GroupManager()
 
 def allowed_file(filename):
+    """
+    Check if the uploaded file has a valid extension.
+    """
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/')
 def admin_panel():
-    images = os.listdir(app.config['UPLOAD_FOLDER'])
-    groups = group_manager.groups  # Получаем словарь групп из GroupManager
+    """
+    Admin panel that lists all images and groups.
+    Displays faces without groups and current groups.
+    """
+    images = os.listdir(app.config['UPLOAD_FOLDER'])  # List files in the upload folder
+    groups = group_manager.groups  # Get groups from GroupManager
 
-    # Находим лица без группы
+    # Find faces that aren't in any group
     all_faces = set(images)
     grouped_faces = set()
     for members in groups.values():
         grouped_faces.update(members)
     
-    ungrouped_faces = all_faces - grouped_faces  # Лица, не входящие в группы
+    ungrouped_faces = all_faces - grouped_faces  # Faces not part of any group
 
     return render_template('admin.html', images=images, groups=groups, ungrouped_faces=ungrouped_faces)
 
 
 @app.route('/create_group', methods=['POST'])
 def create_group():
+    """
+    Create a new group from the admin panel.
+    """
     group_name = request.form.get('group_name')
     if group_name:
         if group_name in group_manager.groups:
@@ -54,6 +75,9 @@ def create_group():
 
 @app.route('/delete_group/<group_name>', methods=['POST'])
 def delete_group(group_name):
+    """
+    Delete a group from the admin panel.
+    """
     if group_name in group_manager.groups:
         group_manager.delete_group(group_name)
         flash(f'Group "{group_name}" deleted successfully.')
@@ -64,6 +88,9 @@ def delete_group(group_name):
 
 @app.route('/rename_group', methods=['POST'])
 def rename_group():
+    """
+    Rename a group.
+    """
     old_name = request.form.get('old_name')
     new_name = request.form.get('new_name')
     
@@ -77,6 +104,9 @@ def rename_group():
 
 @app.route('/add_face_to_group', methods=['POST'])
 def add_face_to_group():
+    """
+    Add a face to a group from the admin panel.
+    """
     group_name = request.form.get('group_name')
     face_name = request.form.get('face_name')
     
@@ -93,6 +123,9 @@ def add_face_to_group():
 
 @app.route('/upload', methods=['POST'])
 def upload_files():
+    """
+    Handle file uploads from the admin panel.
+    """
     if 'files' not in request.files:
         flash('No files selected for uploading')
         return redirect(url_for('admin_panel'))
@@ -120,6 +153,9 @@ def upload_files():
 
 @app.route('/delete_image/<filename>', methods=['POST'])
 def delete_image(filename):
+    """
+    Delete an image from the upload folder.
+    """
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     if os.path.exists(file_path):
         os.remove(file_path)
@@ -132,6 +168,9 @@ def delete_image(filename):
 
 @app.route('/rename_image', methods=['POST'])
 def rename_image():
+    """
+    Rename an image in the upload folder.
+    """
     old_name = request.form.get('old_name')
     new_name = request.form.get('new_name')
 
@@ -157,11 +196,20 @@ def rename_image():
 def view_logs():
     log_level = request.args.get('log_level', '')
     search_query = request.args.get('search_query', '')
+    selected_log_file = request.args.get('log_file', 'admin_logs.log')  # По умолчанию отображаем admin_logs.log
     page = request.args.get('page', 1, type=int)
 
-    with open('admin_logs.log', 'r') as file:
-        logs = file.readlines()
+    # Получаем все доступные лог-файлы в директории
+    log_files = [f for f in os.listdir() if f.endswith('.log')]  # Путь может измениться в зависимости от места расположения логов
 
+    # Открываем выбранный лог-файл
+    try:
+        with open(selected_log_file, 'r') as file:
+            logs = file.readlines()
+    except FileNotFoundError:
+        logs = []
+
+    # Фильтрация логов по уровню и поисковому запросу
     if log_level:
         logs = [log for log in logs if log_level.upper() in log]
 
@@ -178,49 +226,43 @@ def view_logs():
     prev_page = page - 1 if page > 1 else None
     next_page = page + 1 if page < total_pages else None
 
-    # Определение отображаемых страниц с сокращением
-    max_display_pages = 5
-    page_numbers = []
+    # Логика отображения первой и последней страницы
+    show_first = page > 2
+    show_last = page < total_pages - 1
 
-    if total_pages > 0:  # Добавляем проверку на наличие страниц
-        if total_pages <= max_display_pages:
-            page_numbers = list(range(1, total_pages + 1))
-        else:
-            if page <= max_display_pages // 2 + 1:
-                page_numbers = list(range(1, max_display_pages + 1))
-            elif page >= total_pages - max_display_pages // 2:
-                page_numbers = list(range(total_pages - max_display_pages + 1, total_pages + 1))
-            else:
-                page_numbers = list(range(page - max_display_pages // 2, page + max_display_pages // 2 + 1))
-
-    show_first = len(page_numbers) > 0 and page_numbers[0] > 1
-    show_last = len(page_numbers) > 0 and page_numbers[-1] < total_pages
+    page_numbers = list(range(max(1, page - 2), min(page + 3, total_pages + 1)))
 
     return render_template(
         'logs.html', 
         logs=paginated_logs, 
         current_page=page, 
-        page_numbers=page_numbers, 
         prev_page=prev_page, 
-        next_page=next_page, 
+        next_page=next_page,
         log_level=log_level, 
         search_query=search_query,
         total_pages=total_pages,
-        show_first=show_first,
-        show_last=show_last
+        log_files=log_files,  # Список файлов логов для отображения в селекте
+        selected_log_file=selected_log_file,  # Выбранный файл логов
+        show_first=show_first, 
+        show_last=show_last,
+        page_numbers=page_numbers
     )
 
 @app.route('/images/<filename>')
 def serve_image(filename):
+    """
+    Serve an image from the upload folder.
+    """
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 @app.route('/move_face_to_group', methods=['POST'])
-@csrf.exempt  # Исключение CSRF для этого маршрута, если нужно
+@csrf.exempt  # CSRF exemption for this route
 def move_face_to_group():
+    """
+    Move a face to a different group.
+    """
     face_name = request.json.get('face_name')
     new_group_name = request.json.get('group_name')
-
-    logging.info(f"Received face_name: {face_name}, group_name: {new_group_name}")
 
     if not face_name or not new_group_name:
         return jsonify(success=False, message="Invalid data"), 400

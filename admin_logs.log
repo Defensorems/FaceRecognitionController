@@ -3696,3 +3696,89 @@ FileNotFoundError: [Errno 2] No such file or directory: 'path_to_log_file.log'
 2024-09-18 22:33:10,779 - Received face_name: }I{eka.png, group_name: ungrouped
 2024-09-18 22:33:10,779 - Face "}I{eka.png" moved to ungrouped.
 2024-09-18 22:33:10,780 - 192.168.1.65 - - [18/Sep/2024 22:33:10] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-11-09 20:18:35,397 - INFO - Groups successfully loaded from file.
+2024-11-09 20:18:35,447 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-11-09 20:18:35,447 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-09 20:18:46,378 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "GET / HTTP/1.1" 200 -
+2024-11-09 20:18:46,445 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "[33mGET /images/}I{eka.png HTTP/1.1[0m" 404 -
+2024-11-09 20:18:46,515 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "GET /images/Ant.jpg HTTP/1.1" 200 -
+2024-11-09 20:18:46,523 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "GET /images/MrBoloto.jpg HTTP/1.1" 200 -
+2024-11-09 20:18:46,526 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "GET /images/person1.jpg HTTP/1.1" 200 -
+2024-11-09 20:18:46,526 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:46] "GET /images/stepik.jpg HTTP/1.1" 200 -
+2024-11-09 20:18:47,240 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-09 20:18:50,456 - INFO - Face "}I{eka.png" moved to ungrouped.
+2024-11-09 20:18:50,458 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:50] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-11-09 20:18:51,612 - INFO - Face '}I{eka.png' added to group 'g1'.
+2024-11-09 20:18:51,615 - INFO - Groups successfully saved to file.
+2024-11-09 20:18:51,616 - INFO - Face "}I{eka.png" moved to group "g1".
+2024-11-09 20:18:51,617 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:51] "POST /move_face_to_group HTTP/1.1" 200 -
+2024-11-09 20:18:58,526 - INFO - Group 'g1' deleted.
+2024-11-09 20:18:58,529 - INFO - Groups successfully saved to file.
+2024-11-09 20:18:58,530 - INFO - Group "g1" deleted.
+2024-11-09 20:18:58,532 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "[32mPOST /delete_group/g1 HTTP/1.1[0m" 302 -
+2024-11-09 20:18:58,537 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "GET / HTTP/1.1" 200 -
+2024-11-09 20:18:58,608 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2024-11-09 20:18:58,612 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2024-11-09 20:18:58,615 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "[36mGET /images/MrBoloto.jpg HTTP/1.1[0m" 304 -
+2024-11-09 20:18:58,619 - INFO - 10.8.0.4 - - [09/Nov/2024 20:18:58] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2024-11-09 20:19:03,837 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:03] "GET /logs HTTP/1.1" 200 -
+2024-11-09 20:19:09,598 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:09] "GET /logs?log_level=warning&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:11,495 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:11] "GET /logs?log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:15,064 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:15] "GET /logs?log_level=error&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:19,244 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:19] "GET /logs?log_level=&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:23,784 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:23] "GET /logs?log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:26,995 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:26] "GET /logs?page=2&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:29,172 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:29] "GET /logs?page=1&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:33,698 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:33] "GET /logs?page=2&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:35,125 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:35] "GET /logs?page=1&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:40,380 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:40] "GET /logs?page=2&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:44,610 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:44] "GET /logs?page=1&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:49,669 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:49] "GET /logs?page=2&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:19:59,455 - INFO - 10.8.0.4 - - [09/Nov/2024 20:19:59] "GET /logs?page=1&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:20:00,996 - INFO - 10.8.0.4 - - [09/Nov/2024 20:20:00] "GET /logs?page=2&log_level=info&search_query= HTTP/1.1" 200 -
+2024-11-09 20:22:26,031 - INFO - Logging system initialized with rotating file handler.
+2024-11-09 20:22:26,033 - INFO - Groups successfully loaded from file.
+2024-11-09 20:22:26,033 - INFO - Groups successfully loaded from file.
+2024-11-09 20:22:26,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-11-09 20:22:26,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2024-11-09 20:22:26,077 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-09 20:22:26,077 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-09 20:22:32,008 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET / HTTP/1.1" 200 -
+2024-11-09 20:22:32,008 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET / HTTP/1.1" 200 -
+2024-11-09 20:22:32,069 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/Ant.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,069 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/person1.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,069 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/Ant.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,072 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/MrBoloto.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,069 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/person1.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,077 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/stepik.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,072 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/MrBoloto.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,077 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "GET /images/stepik.jpg HTTP/1.1" 200 -
+2024-11-09 20:22:32,864 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-09 20:22:32,864 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-09 20:22:35,827 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:35] "GET /logs HTTP/1.1" 200 -
+2024-11-09 20:22:35,827 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:35] "GET /logs HTTP/1.1" 200 -
+2024-11-09 20:22:38,976 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:38] "GET /logs?log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:22:38,976 - INFO - 127.0.0.1 - - [09/Nov/2024 20:22:38] "GET /logs?log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:11,413 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:11] "GET /logs?page=2&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:11,413 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:11] "GET /logs?page=2&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:12,764 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:12] "GET /logs?page=178&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:12,764 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:12] "GET /logs?page=178&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:21,133 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:21] "GET /logs?page=177&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:23:21,133 - INFO - 127.0.0.1 - - [09/Nov/2024 20:23:21] "GET /logs?page=177&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:25,438 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:25] "GET /logs?page=176&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:25,438 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:25] "GET /logs?page=176&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:39,407 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:39] "GET /logs?page=175&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:39,407 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:39] "GET /logs?page=175&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:43,344 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:43] "GET /logs?page=174&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:43,344 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:43] "GET /logs?page=174&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:47,187 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:47] "GET /logs?page=175&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
+2024-11-09 20:24:47,187 - INFO - 127.0.0.1 - - [09/Nov/2024 20:24:47] "GET /logs?page=175&log_level=&search_query=&log_file=main1_log.log HTTP/1.1" 200 -
