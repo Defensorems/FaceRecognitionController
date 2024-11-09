@@ -2614,3 +2614,876 @@
 2024-10-12 18:14:36,356 - INFO - Лицо на уровне 9 не является живым.
 2024-10-12 18:14:36,357 - INFO - Лицо не является живым.
 2024-10-12 18:14:36,358 - INFO - Текущий уровень проверки живости: 9
+2024-10-12 18:33:55,663 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-10-12 18:33:55,694 - ERROR - РћС€РёР±РєР°: РљР°РјРµСЂР° РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅР°.
+2024-10-19 08:32:49,676 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-10-19 08:32:49,707 - ERROR - РћС€РёР±РєР°: РљР°РјРµСЂР° РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅР°.
+2024-10-19 09:13:37,290 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-10-19 09:13:37,293 - ERROR - РћС€РёР±РєР°: РљР°РјРµСЂР° РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅР°.
+2024-11-09 15:37:54,148 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-11-09 15:37:54,312 - ERROR - РћС€РёР±РєР°: РљР°РјРµСЂР° РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅР°.
+2024-11-09 15:43:16,691 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-11-09 15:43:21,165 - INFO - Р—Р°РіСЂСѓР¶РµРЅР° РєРѕРґРёСЂРѕРІРєР° РґР»СЏ stepik.jpg
+2024-11-09 15:43:25,697 - INFO - Р—Р°РіСЂСѓР¶РµРЅР° РєРѕРґРёСЂРѕРІРєР° РґР»СЏ person1.jpg
+2024-11-09 15:43:25,700 - DEBUG - STREAM b'IHDR' 16 13
+2024-11-09 15:43:25,701 - DEBUG - STREAM b'sRGB' 41 1
+2024-11-09 15:43:25,701 - DEBUG - STREAM b'gAMA' 54 4
+2024-11-09 15:43:25,702 - DEBUG - STREAM b'pHYs' 70 9
+2024-11-09 15:43:25,702 - DEBUG - STREAM b'IDAT' 91 65445
+2024-11-09 15:43:26,662 - INFO - Р—Р°РіСЂСѓР¶РµРЅР° РєРѕРґРёСЂРѕРІРєР° РґР»СЏ Ant.jpg
+2024-11-09 15:43:29,929 - WARNING - РќРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РєРѕРґРёСЂРѕРІРєСѓ РґР»СЏ MrBoloto.jpg
+2024-11-09 15:43:29,931 - INFO - Р“СЂСѓРїРїС‹ СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅС‹ РёР· С„Р°Р№Р»Р°.
+2024-11-09 15:47:11,058 - INFO - РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓС‰РµРЅР°
+2024-11-09 15:47:16,013 - INFO - Р—Р°РіСЂСѓР¶РµРЅР° РєРѕРґРёСЂРѕРІРєР° РґР»СЏ person1.jpg
+2024-11-09 15:47:16,014 - DEBUG - STREAM b'IHDR' 16 13
+2024-11-09 15:47:16,015 - DEBUG - STREAM b'sRGB' 41 1
+2024-11-09 15:47:16,016 - DEBUG - STREAM b'gAMA' 54 4
+2024-11-09 15:47:16,016 - DEBUG - STREAM b'pHYs' 70 9
+2024-11-09 15:47:16,017 - DEBUG - STREAM b'IDAT' 91 65445
+2024-11-09 15:47:16,974 - INFO - Р—Р°РіСЂСѓР¶РµРЅР° РєРѕРґРёСЂРѕРІРєР° РґР»СЏ Ant.jpg
+2024-11-09 15:47:16,975 - INFO - Р“СЂСѓРїРїС‹ СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅС‹ РёР· С„Р°Р№Р»Р°.
+2024-11-09 15:47:19,093 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:20,934 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:22,774 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:24,614 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:26,454 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:28,294 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:30,133 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:31,973 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:33,905 - INFO - Р›РёС†Рѕ РЅР° СѓСЂРѕРІРЅРµ 9 РЅРµ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:33,906 - INFO - Р›РёС†Рѕ РЅРµ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:33,910 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:35,776 - INFO - Р›РёС†Рѕ СЂР°СЃРїРѕР·РЅР°РЅРѕ РєР°Рє Р¶РёРІРѕРµ РЅР° СѓСЂРѕРІРЅРµ 9.
+2024-11-09 15:47:35,776 - INFO - Р›РёС†Рѕ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:35,777 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:37,618 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:39,459 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:41,300 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:43,141 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:44,982 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:46,822 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:48,664 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:50,530 - INFO - Р›РёС†Рѕ СЂР°СЃРїРѕР·РЅР°РЅРѕ РєР°Рє Р¶РёРІРѕРµ РЅР° СѓСЂРѕРІРЅРµ 9.
+2024-11-09 15:47:50,531 - INFO - Р›РёС†Рѕ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:50,531 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:52,372 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:54,214 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:56,077 - INFO - Р›РёС†Рѕ СЂР°СЃРїРѕР·РЅР°РЅРѕ РєР°Рє Р¶РёРІРѕРµ РЅР° СѓСЂРѕРІРЅРµ 9.
+2024-11-09 15:47:56,078 - INFO - Р›РёС†Рѕ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:56,079 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:57,943 - INFO - Р›РёС†Рѕ РЅР° СѓСЂРѕРІРЅРµ 9 РЅРµ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:57,944 - INFO - Р›РёС†Рѕ РЅРµ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:47:57,945 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:47:59,787 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:48:01,652 - INFO - Р›РёС†Рѕ СЂР°СЃРїРѕР·РЅР°РЅРѕ РєР°Рє Р¶РёРІРѕРµ РЅР° СѓСЂРѕРІРЅРµ 9.
+2024-11-09 15:48:01,653 - INFO - Р›РёС†Рѕ СЏРІР»СЏРµС‚СЃСЏ Р¶РёРІС‹Рј.
+2024-11-09 15:48:01,653 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:48:03,495 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:48:05,337 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 15:48:07,178 - INFO - РўРµРєСѓС‰РёР№ СѓСЂРѕРІРµРЅСЊ РїСЂРѕРІРµСЂРєРё Р¶РёРІРѕСЃС‚Рё: 9
+2024-11-09 19:51:32,240 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 19:51:32,730 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 19:51:32,731 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 19:51:32,731 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 19:51:32,731 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 19:51:32,731 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 19:51:33,236 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 19:51:33,724 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 19:51:34,716 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 19:51:35,987 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 19:51:35,993 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 19:51:36,268 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:36,533 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:36,796 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:37,060 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:37,320 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:37,586 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:37,847 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:38,107 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:38,367 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:38,630 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:38,891 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:39,156 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:39,418 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:39,685 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:39,953 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:40,218 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:40,484 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:40,747 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:41,013 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:41,272 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:41,535 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:41,799 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:42,064 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:42,328 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:42,593 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:42,856 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:43,118 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:43,386 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:43,666 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:43,940 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:44,204 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:44,473 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:44,757 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:45,035 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:45,297 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:45,560 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:45,823 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:46,086 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:46,346 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:46,606 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:46,875 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:47,139 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:47,403 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:47,667 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:47,928 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:48,196 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:48,458 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:48,725 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:48,991 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:49,260 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:49,528 - INFO - main1.py - Текущий уровень проверки живости: 9
+2024-11-09 19:51:57,730 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 19:51:57,826 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 19:51:57,826 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 19:51:57,826 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 19:51:57,826 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 19:51:57,826 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 19:51:58,314 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 19:51:58,795 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 19:51:59,793 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 19:52:01,075 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 19:52:01,077 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 19:52:38,463 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 19:52:39,558 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 19:52:39,558 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 19:52:39,558 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 19:52:39,558 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 19:52:39,559 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 19:52:40,044 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 19:52:40,517 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 19:52:41,510 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 19:52:42,769 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 19:52:42,770 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 19:52:43,718 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:43,719 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:43,719 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:43,720 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:43,721 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:43,721 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:43,722 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:43,994 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:43,995 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:43,996 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:43,996 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:43,998 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:43,998 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:43,999 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:44,274 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:44,275 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:44,275 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:44,276 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 19:52:44,276 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:44,277 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:44,277 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:44,553 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:44,554 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:44,554 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:44,555 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:44,555 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:44,556 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:44,556 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:44,832 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:44,833 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:44,833 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:44,834 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:44,835 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:44,835 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:44,836 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:45,112 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:45,113 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:45,114 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:45,114 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:45,115 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:45,115 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:45,116 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:45,389 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:45,389 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:45,390 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:45,391 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:45,391 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:45,392 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:45,392 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:45,665 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:45,666 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:45,666 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:45,668 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:45,668 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:45,669 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:45,670 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:45,945 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:45,946 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:45,946 - INFO - main1.py - Reflection analysis result at level 9: fake
+2024-11-09 19:52:45,946 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:45,948 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:45,949 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:45,949 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:46,223 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:46,224 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:46,224 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:46,225 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:46,226 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:46,226 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:46,227 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:46,501 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:46,502 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:46,502 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:46,503 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 19:52:46,503 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:46,504 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:46,504 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:46,781 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:46,781 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:46,782 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:46,782 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:46,783 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:46,783 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:46,784 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:47,059 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:47,059 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:47,060 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:47,061 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:47,061 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:47,062 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:47,062 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:47,342 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:47,342 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:47,344 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:47,344 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:47,345 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:47,346 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:47,346 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:47,624 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:47,625 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:47,625 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:47,626 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:47,627 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:47,627 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:47,628 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:47,907 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:47,908 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:47,908 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:47,909 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:47,909 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:47,910 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:47,910 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:48,186 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:48,186 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:48,188 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:48,189 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 19:52:48,189 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:48,190 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:48,191 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:48,478 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:48,478 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:48,479 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:48,479 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:48,480 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:48,480 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:48,481 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:48,777 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:48,777 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:48,778 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:48,779 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:48,780 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:48,780 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:48,781 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:49,059 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:49,059 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:49,060 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:49,061 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:49,061 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:52:49,062 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:49,062 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:52:49,342 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:49,343 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:49,343 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:49,344 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:49,345 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:49,346 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:49,346 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:49,623 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:49,623 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:49,624 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:49,625 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:49,625 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:49,626 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:49,626 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:49,907 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:49,908 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:49,908 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:49,909 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:49,909 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:49,910 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:49,910 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:50,186 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:50,186 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:50,188 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:50,189 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:50,189 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:50,190 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:50,190 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:50,464 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:50,465 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:50,466 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:50,466 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:50,467 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:50,467 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:50,468 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:50,741 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:50,742 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:50,742 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:50,743 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:50,743 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:50,744 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:50,745 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:51,289 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:51,290 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:51,290 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:51,290 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:51,291 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:51,292 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:51,292 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:51,835 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:51,836 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:51,836 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:51,838 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:51,839 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:51,839 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:51,840 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:52,115 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:52,116 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:52,116 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:52,117 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:52,117 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:52,118 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:52,118 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:52,392 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:52,393 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:52,393 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:52,394 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:52,394 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:52,395 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:52,396 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:52,676 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:52,676 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:52,678 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:52,678 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:52,679 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:52,680 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:52,681 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:52,953 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:52,953 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:52,954 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:52,955 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:52:52,955 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:52,956 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 19:52:52,956 - INFO - main1.py - Лицо является живым.
+2024-11-09 19:52:53,791 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:52:53,791 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:52:53,792 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:52:53,793 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 19:52:53,793 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 19:52:53,794 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:52:53,794 - INFO - main1.py - Лицо не является живым.
+2024-11-09 19:59:02,431 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 19:59:03,136 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 19:59:03,136 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 19:59:03,136 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 19:59:03,136 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 19:59:03,137 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 19:59:03,626 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 19:59:04,094 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 19:59:05,088 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 19:59:06,356 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 19:59:06,357 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 19:59:07,021 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 19:59:07,022 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 19:59:07,023 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 19:59:07,024 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 19:59:07,024 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 19:59:07,025 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 19:59:07,026 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:32,314 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 20:00:33,137 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 20:00:33,137 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 20:00:33,137 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 20:00:33,137 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 20:00:33,137 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 20:00:33,629 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 20:00:34,098 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 20:00:35,086 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 20:00:36,357 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 20:00:36,358 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 20:00:36,656 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:36,656 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:36,657 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:36,659 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:36,659 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:00:36,660 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:36,661 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:36,997 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:36,998 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:36,999 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:36,999 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:37,000 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:37,000 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:37,001 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:37,373 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:37,374 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:37,663 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:37,664 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:37,664 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:37,665 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:37,666 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:00:37,666 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:37,666 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:37,946 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:37,946 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:37,947 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:37,947 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 20:00:37,948 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:00:37,948 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:37,949 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:38,236 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:38,237 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:38,238 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:38,238 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 20:00:38,239 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:38,240 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:38,240 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:38,527 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:38,527 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:38,528 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:38,528 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:38,529 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:38,529 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:38,531 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:38,900 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:38,901 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:39,190 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:39,190 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:39,191 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:39,192 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:39,192 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:39,193 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:39,194 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:39,567 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:39,568 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:39,844 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:39,845 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:39,845 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:39,846 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:39,846 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:39,847 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:39,847 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:40,227 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:40,229 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:40,518 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:40,519 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:40,519 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:40,520 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:40,521 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:40,521 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:40,522 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:40,900 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:40,901 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:41,182 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:41,183 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:41,183 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:41,184 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:41,185 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:00:41,185 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:41,186 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:41,466 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:41,467 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:41,469 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:41,469 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:41,470 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:00:41,471 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:00:41,471 - INFO - main1.py - Лицо не является живым.
+2024-11-09 20:00:41,761 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:41,761 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:41,762 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:41,763 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:41,763 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:41,764 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:41,764 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:42,135 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:42,137 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:42,429 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:42,429 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:42,430 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:42,430 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:42,431 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:42,432 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:42,432 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:00:42,804 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:42,804 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:00:43,081 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:00:43,082 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:00:43,083 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:00:43,083 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:00:43,084 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:00:43,084 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:00:43,085 - INFO - main1.py - Лицо является живым.
+2024-11-09 20:03:54,683 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 20:03:55,428 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 20:03:55,428 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 20:03:55,428 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 20:03:55,428 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 20:03:55,428 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 20:03:55,926 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 20:03:56,397 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 20:03:57,399 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 20:03:58,677 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 20:03:58,678 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 20:04:02,689 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:02,689 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:02,690 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:02,691 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:02,691 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:04:02,692 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:04:02,692 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is not recognized as live.
+2024-11-09 20:04:02,978 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:02,979 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:02,979 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:02,980 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:02,980 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:04:02,981 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:04:02,982 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is not recognized as live.
+2024-11-09 20:04:03,255 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:03,256 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:03,256 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:03,257 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:03,258 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:04:03,258 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:04:03,259 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is not recognized as live.
+2024-11-09 20:04:03,536 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:03,537 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:03,537 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:03,538 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:03,539 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:03,539 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:03,540 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is recognized as live.
+2024-11-09 20:04:03,907 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:03,908 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:04,462 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:04,463 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:04,463 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:04,464 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:04,465 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:04,465 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:04,465 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is recognized as live.
+2024-11-09 20:04:04,834 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:04,835 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:05,681 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:05,681 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:05,682 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:05,682 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:05,683 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:05,684 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:05,684 - INFO - main1.py - Face detected at position (116, 425, 270, 270) is recognized as live.
+2024-11-09 20:04:06,048 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:06,049 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:06,332 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:06,332 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:06,333 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:06,333 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:06,334 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:06,335 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:06,335 - INFO - main1.py - Face detected at position (116, 390, 270, 236) is recognized as live.
+2024-11-09 20:04:06,702 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:06,703 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:06,988 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:06,989 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:06,989 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:06,990 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:06,991 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:06,991 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:06,992 - INFO - main1.py - Face detected at position (116, 408, 270, 253) is recognized as live.
+2024-11-09 20:04:07,370 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:07,371 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:07,670 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:07,671 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:07,672 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:07,673 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:07,674 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:07,674 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:07,675 - INFO - main1.py - Face detected at position (116, 408, 270, 253) is recognized as live.
+2024-11-09 20:04:08,047 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:08,048 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:08,321 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:08,322 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:08,323 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:08,324 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:08,324 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:04:08,325 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:04:08,325 - INFO - main1.py - Face detected at position (116, 408, 270, 253) is not recognized as live.
+2024-11-09 20:04:08,904 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:08,905 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:08,905 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:08,906 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:08,906 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:04:08,907 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:04:08,908 - INFO - main1.py - Face detected at position (116, 390, 270, 236) is not recognized as live.
+2024-11-09 20:04:10,334 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:10,334 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:10,335 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:10,335 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:10,336 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:10,337 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:10,337 - INFO - main1.py - Face detected at position (116, 408, 270, 253) is recognized as live.
+2024-11-09 20:04:10,702 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:10,703 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:12,952 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:12,953 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:12,953 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:12,954 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:12,955 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:12,955 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:12,956 - INFO - main1.py - Face detected at position (116, 408, 270, 253) is recognized as live.
+2024-11-09 20:04:13,322 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:13,322 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:18,650 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:18,651 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:18,651 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:18,652 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:18,652 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:18,653 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:18,653 - INFO - main1.py - Face detected at position (118, 407, 304, 221) is recognized as live.
+2024-11-09 20:04:19,021 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:19,021 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:21,241 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:21,241 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:21,242 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:21,243 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:21,243 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:21,244 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:21,244 - INFO - main1.py - Face detected at position (98, 373, 253, 218) is recognized as live.
+2024-11-09 20:04:21,614 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:21,615 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:04:21,907 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:04:21,908 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:04:21,908 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:04:21,909 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:04:21,910 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:04:21,910 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:04:21,911 - INFO - main1.py - Face detected at position (98, 408, 253, 253) is recognized as live.
+2024-11-09 20:04:22,278 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:04:22,279 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:09:45,484 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 20:09:46,317 - INFO - main1.py - Camera with ID 0 successfully opened.
+2024-11-09 20:09:46,319 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 20:09:46,319 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 20:09:46,319 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 20:09:46,319 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 20:09:46,319 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 20:09:46,808 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 20:09:47,282 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 20:09:48,270 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 20:09:49,546 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 20:09:49,547 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 20:09:51,561 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:51,562 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:51,562 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:51,563 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:51,563 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:09:51,564 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:09:51,564 - INFO - main1.py - Non-live face detected at position (125, 425, 254, 296).
+2024-11-09 20:09:52,165 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:52,166 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:52,166 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:52,167 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:52,167 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:09:52,168 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:09:52,168 - INFO - main1.py - Live face detected at position (116, 442, 270, 287).
+2024-11-09 20:09:52,545 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:09:52,546 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:09:54,809 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:54,810 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:54,811 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:54,811 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:54,812 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:09:54,812 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:09:54,813 - INFO - main1.py - Live face detected at position (125, 440, 254, 311).
+2024-11-09 20:09:55,179 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:09:55,179 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:09:56,586 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:56,587 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:56,588 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:56,589 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 20:09:56,589 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:09:56,589 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:09:56,590 - INFO - main1.py - Non-live face detected at position (110, 440, 239, 311).
+2024-11-09 20:09:56,867 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:56,867 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:56,868 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:56,868 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:56,869 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:09:56,869 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:09:56,870 - INFO - main1.py - Live face detected at position (125, 440, 254, 311).
+2024-11-09 20:09:57,237 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:09:57,238 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:09:57,529 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:57,530 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:57,531 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:57,531 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:57,532 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:09:57,533 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:09:57,533 - INFO - main1.py - Non-live face detected at position (125, 440, 254, 311).
+2024-11-09 20:09:57,820 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:09:57,821 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:09:57,821 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:09:57,822 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:09:57,823 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:09:57,823 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:09:57,824 - INFO - main1.py - Live face detected at position (110, 440, 239, 311).
+2024-11-09 20:09:58,190 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:09:58,191 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:10:00,160 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:00,160 - INFO - main1.py - Texture analysis result at level 9: fake
+2024-11-09 20:10:00,161 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:00,161 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:00,162 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:00,162 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:00,163 - INFO - main1.py - Non-live face detected at position (174, 565, 210, 529).
+2024-11-09 20:10:00,164 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:00,164 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:00,165 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:00,165 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:00,166 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:00,167 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:10:00,168 - INFO - main1.py - Live face detected at position (110, 454, 239, 325).
+2024-11-09 20:10:00,537 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:10:00,538 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:10:00,815 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:00,816 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:00,816 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:00,817 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:00,817 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:00,818 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:10:00,819 - INFO - main1.py - Live face detected at position (98, 459, 253, 304).
+2024-11-09 20:10:01,186 - INFO - main1.py - Recognized face: Unknown.
+2024-11-09 20:10:01,466 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:01,467 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:01,468 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:01,468 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:01,469 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:10:01,469 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:01,470 - INFO - main1.py - Non-live face detected at position (98, 459, 253, 304).
+2024-11-09 20:10:01,752 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:01,752 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:01,753 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:01,753 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:01,754 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:10:01,755 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:01,755 - INFO - main1.py - Non-live face detected at position (98, 459, 253, 304).
+2024-11-09 20:10:02,328 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:02,328 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:02,329 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:02,330 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:02,330 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:10:02,331 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:02,332 - INFO - main1.py - Non-live face detected at position (110, 440, 239, 311).
+2024-11-09 20:10:02,898 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:02,899 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:02,900 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:02,900 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:02,901 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:02,901 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:10:02,902 - INFO - main1.py - Live face detected at position (98, 459, 253, 304).
+2024-11-09 20:10:03,273 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:10:03,273 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:10:03,555 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:03,555 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:03,556 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:03,556 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:03,557 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:10:03,557 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:03,558 - INFO - main1.py - Non-live face detected at position (98, 459, 253, 304).
+2024-11-09 20:10:10,585 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:10,587 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:10,588 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:10,588 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:10:10,589 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:10,589 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:10:10,590 - INFO - main1.py - Live face detected at position (150, 459, 305, 304).
+2024-11-09 20:10:10,959 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:10:10,960 - INFO - main1.py - Recognized face: person1.jpg.
+2024-11-09 20:10:16,010 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:10:16,011 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:10:16,012 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:10:16,012 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 20:10:16,013 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:10:16,013 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:10:16,014 - INFO - main1.py - Non-live face detected at position (133, 356, 288, 201).
+2024-11-09 20:11:12,425 - INFO - main1.py - Logging system initialized with rotating file handler.
+2024-11-09 20:11:13,218 - INFO - main1.py - Camera with ID 0 successfully opened.
+2024-11-09 20:11:13,219 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2024-11-09 20:11:13,219 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2024-11-09 20:11:13,220 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2024-11-09 20:11:13,220 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2024-11-09 20:11:13,220 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2024-11-09 20:11:13,706 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2024-11-09 20:11:14,171 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2024-11-09 20:11:15,166 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2024-11-09 20:11:16,431 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2024-11-09 20:11:16,432 - INFO - main1.py - Groups successfully loaded from file.
+2024-11-09 20:11:19,565 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:19,567 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:19,567 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:19,567 - INFO - main1.py - Blink detection result at level 9: not detected
+2024-11-09 20:11:19,567 - INFO - main1.py - Head movement detection result at level 9: not detected
+2024-11-09 20:11:19,568 - INFO - main1.py - Face at level 9 is not live.
+2024-11-09 20:11:19,568 - INFO - main1.py - Non-live face detected at position (125, 468, 254, 339).
+2024-11-09 20:11:22,088 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:22,089 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:22,090 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:22,091 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:11:22,091 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:11:22,092 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:11:22,462 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:11:22,463 - INFO - main1.py - Live face detected at position (116, 442, 270, 287). Recognized face: person1.jpg.
+2024-11-09 20:11:22,750 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:22,751 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:22,752 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:22,752 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:11:22,753 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:11:22,754 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:11:23,125 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:11:23,126 - INFO - main1.py - Live face detected at position (116, 425, 270, 270). Recognized face: person1.jpg.
+2024-11-09 20:11:33,830 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:33,831 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:33,832 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:33,833 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:11:33,833 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:11:33,834 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:11:34,205 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:11:34,205 - INFO - main1.py - Live face detected at position (150, 425, 305, 270). Recognized face: person1.jpg.
+2024-11-09 20:11:43,148 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:43,149 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:43,150 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:43,150 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:11:43,150 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:11:43,151 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:11:43,518 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:11:43,519 - INFO - main1.py - Live face detected at position (150, 408, 305, 253). Recognized face: person1.jpg.
+2024-11-09 20:11:43,807 - INFO - main1.py - Level 9: Comprehensive check with soft thresholds
+2024-11-09 20:11:43,808 - INFO - main1.py - Texture analysis result at level 9: live
+2024-11-09 20:11:43,809 - INFO - main1.py - Reflection analysis result at level 9: natural
+2024-11-09 20:11:43,809 - INFO - main1.py - Blink detection result at level 9: detected
+2024-11-09 20:11:43,810 - INFO - main1.py - Head movement detection result at level 9: detected
+2024-11-09 20:11:43,810 - INFO - main1.py - Face recognized as live at level 9.
+2024-11-09 20:11:44,184 - INFO - main1.py - Recognized face: person1.jpg
+2024-11-09 20:11:44,185 - INFO - main1.py - Live face detected at position (98, 386, 284, 201). Recognized face: person1.jpg.
