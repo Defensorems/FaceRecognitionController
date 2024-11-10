@@ -105,6 +105,12 @@ class GroupManager:
         except IOError as e:
             logging.error(f"Error loading from file: {e}")
 
+    def set_liveness_level(self, level):
+        """Sets the global liveness level variable."""
+        global liveness_level
+        liveness_level = level
+        logging.info(f"Liveness level set to {liveness_level}")
+
 
 def load_known_face_encodings(folder_path):
     """
@@ -363,6 +369,8 @@ def main():
     Captures video from the webcam, processes frames, and performs recognition and liveness checks.
     Handles headless mode (no GUI) for Ubuntu server environments.
     """
+    
+    global liveness_level
     
     # Check the operating system
     current_platform = platform.system()

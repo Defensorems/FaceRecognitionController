@@ -192,6 +192,28 @@ def rename_image():
     
     return redirect(url_for('admin_panel'))
 
+@app.route('/set_liveness', methods=['POST'])
+def set_liveness():
+    """
+    Set the liveness level for a group.
+    """
+    group_name = request.form.get('group_name')
+    liveness_level = request.form.get('liveness_level', type=int)
+
+    if group_name in group_manager.groups:
+        try:
+            group_manager.set_liveness_level(liveness_level)
+            flash(f'Liveness level for group "{group_name}" set to {liveness_level}.')
+            logging.info(f'Liveness level for group "{group_name}" set to {liveness_level}.')
+        except Exception as e:
+            flash(f'Failed to set liveness level: {str(e)}')
+            logging.error(f'Error setting liveness level for group "{group_name}": {str(e)}')
+    else:
+        flash(f'Group "{group_name}" not found.')
+        logging.warning(f'Attempt to set liveness for non-existent group "{group_name}".')
+
+    return redirect(url_for('admin_panel'))
+
 @app.route('/logs', methods=['GET'])
 def view_logs():
     log_level = request.args.get('log_level', '')
@@ -202,11 +224,16 @@ def view_logs():
     # Получаем все доступные лог-файлы в директории
     log_files = [f for f in os.listdir() if f.endswith('.log')]  # Путь может измениться в зависимости от места расположения логов
 
-    # Открываем выбранный лог-файл
+    # Открываем выбранный лог-файл с указанием кодировки
+    logs = []
     try:
-        with open(selected_log_file, 'r') as file:
+        with open(selected_log_file, 'r', encoding='utf-8', errors='ignore') as file:
             logs = file.readlines()
     except FileNotFoundError:
+        logs = []
+    except UnicodeDecodeError as e:
+        # Логирование ошибки кодировки, если файл не может быть открыт в UTF-8
+        app.logger.error(f"Ошибка кодировки при открытии файла {selected_log_file}: {str(e)}")
         logs = []
 
     # Фильтрация логов по уровню и поисковому запросу
@@ -247,6 +274,10 @@ def view_logs():
         show_last=show_last,
         page_numbers=page_numbers
     )
+
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
 
 @app.route('/images/<filename>')
 def serve_image(filename):
