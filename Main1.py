@@ -9,6 +9,7 @@ import logging
 import logging.handlers
 import json
 import platform
+import subprocess
 
 # Custom logging handler that ensures log messages are written and flushed to file immediately
 class FlushFileHandler(logging.handlers.RotatingFileHandler):
@@ -31,6 +32,12 @@ def setup_logging(log_file='main1_log.log'):
     logging.info("Logging system initialized with rotating file handler.")
 
 setup_logging()
+
+def lock1():
+    subprocess.run(['./lock1'], capture_output=True, text=True)
+
+def lock2():
+    subprocess.run(['./lock2'], capture_output=True, text=True)
 
 class GroupManager:
     """Class for managing groups of faces with enhanced logging functionality."""
@@ -394,7 +401,7 @@ def main():
     group_manager = GroupManager()
 
     prev_landmarks = None  # Variable to store the previous face landmarks for movement analysis
-    liveness_level = 9  # Set a threshold for liveness detection (higher means stricter criteria)
+    liveness_level = 0  # Set a threshold for liveness detection (higher means stricter criteria)
 
     # Check if the environment is headless (no display available)
     is_headless = current_platform == 'Linux' and not os.environ.get('DISPLAY')
@@ -423,6 +430,13 @@ def main():
 
                     for recognized_face in recognized_faces:
                         logging.info(f"Live face detected at position {face_location}. Recognized face: {recognized_face}.")
+                        print(recognized_face)
+                        if recognized_face == 'person1.jpg':
+                            lock1()
+                            #pass
+                        else:
+                            lock2()
+                            #pass
                 else:
                     logging.info(f"Non-live face detected at position {face_location}.")
         

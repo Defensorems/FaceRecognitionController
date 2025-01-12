@@ -1,0 +1,47 @@
+2025-01-12 19:37:11,957 - INFO - main1.py - Logging system initialized with rotating file handler.
+2025-01-12 19:37:13,098 - INFO - main1.py - Camera with ID 0 successfully opened.
+2025-01-12 19:37:13,125 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2025-01-12 19:37:13,125 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2025-01-12 19:37:13,125 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2025-01-12 19:37:13,125 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2025-01-12 19:37:13,125 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2025-01-12 19:37:13,633 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2025-01-12 19:37:14,120 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2025-01-12 19:37:15,131 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2025-01-12 19:37:16,419 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2025-01-12 19:37:16,421 - INFO - main1.py - Groups successfully loaded from file.
+2025-01-12 19:37:17,141 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:17,522 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:17,522 - INFO - main1.py - Live face detected at position (93, 439, 316, 216). Recognized face: person1.jpg.
+2025-01-12 19:37:38,488 - INFO - main1.py - Logging system initialized with rotating file handler.
+2025-01-12 19:37:39,367 - INFO - main1.py - Camera with ID 0 successfully opened.
+2025-01-12 19:37:39,368 - DEBUG - PngImagePlugin.py - STREAM b'IHDR' 16 13
+2025-01-12 19:37:39,369 - DEBUG - PngImagePlugin.py - STREAM b'sRGB' 41 1
+2025-01-12 19:37:39,369 - DEBUG - PngImagePlugin.py - STREAM b'gAMA' 54 4
+2025-01-12 19:37:39,369 - DEBUG - PngImagePlugin.py - STREAM b'pHYs' 70 9
+2025-01-12 19:37:39,369 - DEBUG - PngImagePlugin.py - STREAM b'IDAT' 91 65445
+2025-01-12 19:37:39,869 - INFO - main1.py - Encoding loaded for 'Ant.jpg'
+2025-01-12 19:37:40,356 - WARNING - main1.py - Failed to obtain encoding for 'MrBoloto.jpg'
+2025-01-12 19:37:41,403 - INFO - main1.py - Encoding loaded for 'person1.jpg'
+2025-01-12 19:37:42,747 - INFO - main1.py - Encoding loaded for 'stepik.jpg'
+2025-01-12 19:37:42,748 - INFO - main1.py - Groups successfully loaded from file.
+2025-01-12 19:37:43,416 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:43,806 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:43,806 - INFO - main1.py - Live face detected at position (57, 386, 242, 201). Recognized face: person1.jpg.
+2025-01-12 19:37:44,100 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:44,477 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:44,478 - INFO - main1.py - Live face detected at position (77, 386, 263, 201). Recognized face: person1.jpg.
+2025-01-12 19:37:44,757 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:45,129 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:45,130 - INFO - main1.py - Live face detected at position (68, 414, 291, 191). Recognized face: person1.jpg.
+2025-01-12 19:37:45,431 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:45,805 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:45,806 - INFO - main1.py - Live face detected at position (68, 414, 291, 191). Recognized face: person1.jpg.
+2025-01-12 19:37:46,088 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:46,464 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:46,465 - INFO - main1.py - Live face detected at position (68, 414, 291, 191). Recognized face: person1.jpg.
+2025-01-12 19:37:46,759 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:47,138 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 19:37:47,139 - INFO - main1.py - Live face detected at position (68, 439, 291, 216). Recognized face: person1.jpg.
+2025-01-12 19:37:47,454 - INFO - main1.py - Level 0: No liveness check performed.
+2025-01-12 19:37:47,831 - INFO - main1.py - Recognized face: person1.jpg
