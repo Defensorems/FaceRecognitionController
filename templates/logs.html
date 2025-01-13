@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .log-info {
+            color: #17a2b8; /* Цвет для информационных сообщений */
+        }
+        .log-warning {
+            color: #ffc107; /* Цвет для предупреждений */
+        }
+        .log-error {
+            color: #dc3545; /* Цвет для ошибок */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Log Viewer</h1>
+
+        <!-- Форма фильтрации и поиска -->
+        <form id="filter-form" method="GET" action="{{ url_for('view_logs') }}">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="log-level">Filter by Log Level:</label>
+                    <select class="form-control" id="log-level" name="log_level">
+                        <option value="">All</option>
+                        <option value="info" {% if log_level == 'info' %}selected{% endif %}>Info</option>
+                        <option value="warning" {% if log_level == 'warning' %}selected{% endif %}>Warning</option>
+                        <option value="error" {% if log_level == 'error' %}selected{% endif %}>Error</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="search-query">Search Logs:</label>
+                    <input type="text" class="form-control" id="search-query" name="search_query" placeholder="Enter keyword..." value="{{ search_query }}">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="log-file">Select Log File:</label>
+                    <select class="form-control" id="log-file" name="log_file">
+                        {% for log_file in log_files %}
+                            <option value="{{ log_file }}" {% if log_file == selected_log_file %}selected{% endif %}>{{ log_file }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3 align-self-end">
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Логи -->
+        <div class="logs-content">
+            {% if logs %}
+                <ul class="list-group">
+                    {% for log in logs %}
+                        <li class="list-group-item {% if 'INFO' in log %}log-info{% elif 'WARNING' in log %}log-warning{% elif 'ERROR' in log %}log-error{% endif %}">
+                            {{ log }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No logs available for the selected criteria.</p>
+            {% endif %}
+        </div>
+
+        <!-- Пагинация -->
+        <nav aria-label="Log pagination">
+            <ul class="pagination justify-content-center">
+                {% if prev_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=prev_page, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+
+                {% if show_first %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=1, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">1</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                {% endif %}
+
+                {% for page_num in page_numbers %}
+                    <li class="page-item {% if page_num == current_page %}active{% endif %}">
+                        <a class="page-link" href="{{ url_for('view_logs', page=page_num, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">{{ page_num }}</a>
+                    </li>
+                {% endfor %}
+
+                {% if show_last %}
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=total_pages, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}">{{ total_pages }}</a>
+                    </li>
+                {% endif %}
+
+                {% if next_page %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ url_for('view_logs', page=next_page, log_level=log_level, search_query=search_query, log_file=selected_log_file) }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <!-- Кнопка возврата -->
+        <a href="{{ url_for('admin_panel') }}" class="btn btn-primary mt-4">Back to Admin Panel</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
