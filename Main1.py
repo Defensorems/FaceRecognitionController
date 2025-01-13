@@ -405,12 +405,20 @@ def main():
 
     # Check if the environment is headless (no display available)
     is_headless = current_platform == 'Linux' and not os.environ.get('DISPLAY')
+    
+    frame_count = 0
 
     while True:
         ret, frame = cap.read()  # Capture each frame from the video stream
         if not ret:
             logging.error("Failed to capture an image from the camera. Please check the camera connection.")  # Clear error message for frame capture failure
             break
+        
+        if frame_count % 2 != 0: # Skipping every second frame
+            frame_count += 1
+            continue
+        
+        frame_count += 1
 
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)  # Convert the captured frame from BGR to RGB color space
         face_locations = face_recognition.face_locations(rgb_frame)  # Detect faces in the frame
