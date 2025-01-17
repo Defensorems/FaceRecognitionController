@@ -82,6 +82,19 @@ class GroupManager:
             self.save_to_file()
         else:
             logging.warning(f"Group '{group_name}' not found.")
+            
+    def remove_face(self, face_name):
+        """Removes a face from all groups."""
+        found = False
+        for group_name, members in self.groups.items():
+            if face_name in members:
+                members.remove(face_name)
+                found = True
+                logging.info(f"Face '{face_name}' removed from group '{group_name}'.")
+        if found:
+            self.save_to_file()
+        else:
+            logging.warning(f"Face '{face_name}' not found in any group.")
 
     def get_group_of_face(self, face_name):
         """Returns the group to which a specific face belongs, if any."""
@@ -414,7 +427,7 @@ def main():
             logging.error("Failed to capture an image from the camera. Please check the camera connection.")  # Clear error message for frame capture failure
             break
         
-        if frame_count % 2 != 0: # Skipping every second frame
+        if frame_count % 10 != 0: # Skipping every second frame
             frame_count += 1
             continue
         

@@ -154,13 +154,14 @@ def upload_files():
 @app.route('/delete_image/<filename>', methods=['POST'])
 def delete_image(filename):
     """
-    Delete an image from the upload folder.
+    Delete an image from the upload folder and remove it from groups.
     """
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     if os.path.exists(file_path):
         os.remove(file_path)
+        group_manager.remove_face(filename)
         flash(f'Image {filename} deleted successfully.')
-        logging.info(f"Image {filename} deleted.")
+        logging.info(f"Image {filename} deleted and removed from groups.")
     else:
         flash(f'File {filename} not found.')
         logging.warning(f"Attempt to delete non-existent file: {filename}")
@@ -300,9 +301,11 @@ def move_face_to_group():
 
     current_group_name = group_manager.get_group_of_face(face_name)
 
+    # Remove face from the current group if it exists
     if current_group_name and face_name in group_manager.groups.get(current_group_name, []):
         group_manager.groups[current_group_name].remove(face_name)
 
+    # Add face to the new group
     if new_group_name == 'ungrouped':
         logging.info(f'Face "{face_name}" moved to ungrouped.')
     else:

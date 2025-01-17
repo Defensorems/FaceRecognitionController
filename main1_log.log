@@ -45,3 +45,452 @@
 2025-01-12 19:37:47,139 - INFO - main1.py - Live face detected at position (68, 439, 291, 216). Recognized face: person1.jpg.
 2025-01-12 19:37:47,454 - INFO - main1.py - Level 0: No liveness check performed.
 2025-01-12 19:37:47,831 - INFO - main1.py - Recognized face: person1.jpg
+2025-01-12 20:10:20,084 - DEBUG - base_comm.py - handle_close[47426edfd0d411efa560200b7464a2a7]({'header': {'msg_id': '7d0113e5-8183a9c8d36debf465bedb36_6276_20', 'msg_type': 'comm_close', 'username': 'username', 'session': '7d0113e5-8183a9c8d36debf465bedb36', 'date': datetime.datetime(2025, 1, 12, 17, 10, 20, 81470, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '7d0113e5-8183a9c8d36debf465bedb36_6276_20', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '47426edfd0d411efa560200b7464a2a7', 'data': {}}, 'buffers': []})
+2025-01-15 13:26:10,274 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:26:10,278 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:26:10,323 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:26:10,324 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:26:20,790 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:20] "GET / HTTP/1.1" 200 -
+2025-01-15 13:26:20,934 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:20] "GET /images/person1.jpg HTTP/1.1" 200 -
+2025-01-15 13:26:20,937 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:20] "GET /images/Ant.jpg HTTP/1.1" 200 -
+2025-01-15 13:26:20,938 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:20] "GET /images/stepik.jpg HTTP/1.1" 200 -
+2025-01-15 13:26:20,947 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:20] "GET /images/MrBoloto.jpg HTTP/1.1" 200 -
+2025-01-15 13:26:21,426 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:26:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-15 13:30:42,851 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:30:42,853 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:30:42,889 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:30:42,890 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:30:46,570 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:46] "GET / HTTP/1.1" 200 -
+2025-01-15 13:30:46,623 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:46] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:46,625 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:46] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:46,628 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:46] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:46,630 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:46] "[36mGET /images/MrBoloto.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:50,751 - INFO - adminka.py - Image MrBoloto.jpg deleted.
+2025-01-15 13:30:50,755 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:50] "[32mPOST /delete_image/MrBoloto.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:30:50,762 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:50] "GET / HTTP/1.1" 200 -
+2025-01-15 13:30:50,813 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:50] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:50,817 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:50] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:50,819 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:50] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:53,838 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:53] "GET / HTTP/1.1" 200 -
+2025-01-15 13:30:53,871 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:53] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:53,875 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:53] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:30:53,877 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:30:53] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:03,632 - INFO - Main1.py - Group '1' created.
+2025-01-15 13:31:03,636 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:31:03,638 - INFO - adminka.py - Group "1" created.
+2025-01-15 13:31:03,639 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:03] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 13:31:03,645 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:03] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:03,688 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:03] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:03,693 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:03] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:03,696 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:03] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:16,577 - INFO - adminka.py - Image 20241008_115243.jpg uploaded successfully.
+2025-01-15 13:31:16,580 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 13:31:16,584 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:16,632 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:16,635 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:16,639 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:16,647 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:16] "GET /images/20241008_115243.jpg HTTP/1.1" 200 -
+2025-01-15 13:31:22,016 - INFO - Main1.py - Face '20241008_115243.jpg' added to group '1'.
+2025-01-15 13:31:22,020 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:31:22,021 - INFO - adminka.py - Face "20241008_115243.jpg" moved to group "1".
+2025-01-15 13:31:22,023 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:22] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:31:23,962 - INFO - Main1.py - Face 'person1.jpg' added to group '1'.
+2025-01-15 13:31:23,964 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:31:23,965 - INFO - adminka.py - Face "person1.jpg" moved to group "1".
+2025-01-15 13:31:23,967 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:23] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:31:26,181 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:26] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:26,211 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:26] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:26,216 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:26] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:26,220 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:26] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:26,221 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:26] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:30,958 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:30] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:30,988 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:30] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:30,993 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:30] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:30,994 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:30] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:30,997 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:30] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:31,671 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:31] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:31,702 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:31] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:31,708 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:31] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:31,713 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:31] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:31,715 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:31] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:37,321 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:37] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:37,373 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:37] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:37,378 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:37] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:37,383 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:37] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:37,386 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:37] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:48,775 - INFO - Main1.py - Face 'stepik.jpg' added to group '1'.
+2025-01-15 13:31:48,778 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:31:48,779 - INFO - adminka.py - Face "stepik.jpg" moved to group "1".
+2025-01-15 13:31:48,781 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:48] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:31:50,582 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:50] "GET / HTTP/1.1" 200 -
+2025-01-15 13:31:50,612 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:50] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:50,618 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:50] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:50,620 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:50] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:31:50,624 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:31:50] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:53,751 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:53] "GET / HTTP/1.1" 200 -
+2025-01-15 13:32:53,814 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:53] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:53,818 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:53] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:53,822 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:53] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:53,825 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:53] "[36mGET /images/stepik.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:56,856 - INFO - adminka.py - Image stepik.jpg deleted.
+2025-01-15 13:32:56,861 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "[32mPOST /delete_image/stepik.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:32:56,866 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "GET / HTTP/1.1" 200 -
+2025-01-15 13:32:56,918 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:56,920 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:56,923 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:32:56,926 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:56] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:59,723 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:59] "GET / HTTP/1.1" 200 -
+2025-01-15 13:32:59,753 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:59] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:59,758 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:59] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:59,761 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:59] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:32:59,763 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:32:59] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:04,242 - WARNING - adminka.py - Attempt to delete non-existent file: stepik.jpg
+2025-01-15 13:33:04,246 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "[32mPOST /delete_image/stepik.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:33:04,252 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "GET / HTTP/1.1" 200 -
+2025-01-15 13:33:04,296 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:04,300 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:04,304 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:04,304 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:04] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:42,956 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:33:42,965 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:33:43,002 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:33:43,005 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:33:46,518 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:46] "GET / HTTP/1.1" 200 -
+2025-01-15 13:33:46,533 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:46] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:46,535 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:46] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:46,554 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:46] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:46,557 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:46] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:51,288 - INFO - adminka.py - Face "20241008_115243.jpg" moved to ungrouped.
+2025-01-15 13:33:51,291 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:51] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:33:53,216 - INFO - adminka.py - Face "person1.jpg" moved to ungrouped.
+2025-01-15 13:33:53,220 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:53] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:33:54,779 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:54] "GET / HTTP/1.1" 200 -
+2025-01-15 13:33:54,811 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:54] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:54,815 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:54] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:54,818 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:54] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:54,818 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:54] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:55,941 - WARNING - adminka.py - Attempt to delete non-existent file: stepik.jpg
+2025-01-15 13:33:55,945 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:55] "[32mPOST /delete_image/stepik.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:33:55,951 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:55] "GET / HTTP/1.1" 200 -
+2025-01-15 13:33:55,994 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:55] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:55,998 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:55] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:56,001 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:56] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:56,002 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:56] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:57,793 - INFO - Main1.py - Face '20241008_115243.jpg' added to group '1'.
+2025-01-15 13:33:57,797 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:33:57,798 - INFO - adminka.py - Face "20241008_115243.jpg" moved to group "1".
+2025-01-15 13:33:57,801 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:57] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:33:59,297 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:59] "GET / HTTP/1.1" 200 -
+2025-01-15 13:33:59,331 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:59] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:59,335 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:59] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:33:59,337 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:59] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:33:59,340 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:33:59] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:34:59,059 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:34:59,067 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:34:59,102 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:34:59,104 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:35:02,488 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:02] "GET / HTTP/1.1" 200 -
+2025-01-15 13:35:02,507 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:02] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:35:02,513 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:02] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:35:02,555 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:02] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:35:02,558 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:02] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:35:05,396 - INFO - adminka.py - Face "20241008_115243.jpg" moved to ungrouped.
+2025-01-15 13:35:05,399 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:05] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:35:06,738 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:06] "GET / HTTP/1.1" 200 -
+2025-01-15 13:35:06,773 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:06] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:35:06,778 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:06] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:35:06,782 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:06] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:35:06,782 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:35:06] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:20,891 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:38:20,960 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:38:20,963 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:38:20,998 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:38:21,001 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:38:23,635 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:23] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:23,673 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:23] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:23,680 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:23] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:23,686 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:23] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:38:23,690 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:23] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:25,437 - WARNING - adminka.py - Attempt to delete non-existent file: stepik.jpg
+2025-01-15 13:38:25,443 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "[32mPOST /delete_image/stepik.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:38:25,449 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:25,500 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:25,504 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:25,504 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:38:25,507 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:25] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:27,328 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:27] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:27,365 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:27] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:27,369 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:27] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:27,370 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:27] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:38:27,375 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:27] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:29,598 - INFO - adminka.py - Face "20241008_115243.jpg" moved to ungrouped.
+2025-01-15 13:38:29,603 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:29] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:38:30,648 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:30] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:30,681 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:30] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:30,686 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:30] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:30,687 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:30] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:38:30,690 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:30] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:32,514 - WARNING - adminka.py - Attempt to delete non-existent file: stepik.jpg
+2025-01-15 13:38:32,518 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "[32mPOST /delete_image/stepik.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:38:32,526 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:32,567 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:32,573 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:32,575 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:32,577 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:32] "[33mGET /images/stepik.jpg HTTP/1.1[0m" 404 -
+2025-01-15 13:38:34,290 - INFO - Main1.py - Group '1' deleted.
+2025-01-15 13:38:34,295 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:38:34,299 - INFO - adminka.py - Group "1" deleted.
+2025-01-15 13:38:34,302 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:34] "[32mPOST /delete_group/1 HTTP/1.1[0m" 302 -
+2025-01-15 13:38:34,310 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:34] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:34,355 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:34] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:34,363 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:34] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:34,368 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:34] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:39,092 - INFO - Main1.py - Group '1' created.
+2025-01-15 13:38:39,098 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:38:39,100 - INFO - adminka.py - Group "1" created.
+2025-01-15 13:38:39,103 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:39] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 13:38:39,110 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:39] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:39,158 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:39] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:39,163 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:39] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:39,167 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:39] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:46,495 - INFO - adminka.py - Image Ieka.png uploaded successfully.
+2025-01-15 13:38:46,498 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 13:38:46,506 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:46,551 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:46,557 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:46,562 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:46,568 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:46] "GET /images/Ieka.png HTTP/1.1" 200 -
+2025-01-15 13:38:48,596 - INFO - Main1.py - Face 'Ieka.png' added to group '1'.
+2025-01-15 13:38:48,601 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:38:48,602 - INFO - adminka.py - Face "Ieka.png" moved to group "1".
+2025-01-15 13:38:48,607 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:48] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:38:50,067 - INFO - Main1.py - Face 'Ieka.png' removed from group '1'.
+2025-01-15 13:38:50,073 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:38:50,076 - INFO - adminka.py - Image Ieka.png deleted and removed from groups.
+2025-01-15 13:38:50,078 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:50] "[32mPOST /delete_image/Ieka.png HTTP/1.1[0m" 302 -
+2025-01-15 13:38:50,085 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:50] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:50,135 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:50] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:50,141 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:50] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:50,145 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:50] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:52,794 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:52] "GET / HTTP/1.1" 200 -
+2025-01-15 13:38:52,830 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:52] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:52,834 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:52] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:38:52,837 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:38:52] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:12,038 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:44:12,048 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:44:12,090 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:44:12,093 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:44:14,228 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:14] "GET / HTTP/1.1" 200 -
+2025-01-15 13:44:14,260 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:14] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:14,260 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:14] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:14,262 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:14] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:55,007 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:44:55,011 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:44:55,047 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:44:55,050 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:44:56,995 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:56] "GET / HTTP/1.1" 200 -
+2025-01-15 13:44:57,024 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:57] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:57,029 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:57] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:44:57,031 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:44:57] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:03,376 - INFO - Main1.py - Face '20241008_115243.jpg' added to group '1'.
+2025-01-15 13:45:03,381 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:45:03,384 - INFO - adminka.py - Face "20241008_115243.jpg" moved to group "1".
+2025-01-15 13:45:03,388 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:03] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:45:04,963 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:04] "GET / HTTP/1.1" 200 -
+2025-01-15 13:45:05,003 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:05] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:05,008 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:05] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:05,012 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:05] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:09,334 - INFO - Main1.py - Face 'person1.jpg' added to group '1'.
+2025-01-15 13:45:09,342 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:45:09,345 - INFO - adminka.py - Face "person1.jpg" moved to group "1".
+2025-01-15 13:45:09,349 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:09] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:45:11,337 - INFO - Main1.py - Face 'Ant.jpg' added to group '1'.
+2025-01-15 13:45:11,341 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:45:11,345 - INFO - adminka.py - Face "Ant.jpg" moved to group "1".
+2025-01-15 13:45:11,348 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:11] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:45:12,637 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:12] "GET / HTTP/1.1" 200 -
+2025-01-15 13:45:12,667 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:12] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:12,672 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:12] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:12,673 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:12] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:14,382 - INFO - adminka.py - Face "Ant.jpg" moved to ungrouped.
+2025-01-15 13:45:14,387 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:14] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:45:15,510 - INFO - adminka.py - Face "person1.jpg" moved to ungrouped.
+2025-01-15 13:45:15,515 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:15] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:45:16,753 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:16] "GET / HTTP/1.1" 200 -
+2025-01-15 13:45:16,787 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:16] "[36mGET /images/Ant.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:16,791 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:16] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:16,794 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:16] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:45:28,956 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:45:28] "GET /settings HTTP/1.1" 200 -
+2025-01-15 13:46:13,693 - WARNING - Main1.py - Face 'Ant.jpg' not found in any group.
+2025-01-15 13:46:13,698 - INFO - adminka.py - Image Ant.jpg deleted and removed from groups.
+2025-01-15 13:46:13,703 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:13] "[32mPOST /delete_image/Ant.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:46:13,710 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:13] "GET / HTTP/1.1" 200 -
+2025-01-15 13:46:13,754 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:13] "[36mGET /images/person1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:46:13,761 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:13] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:46:15,436 - WARNING - Main1.py - Face 'person1.jpg' not found in any group.
+2025-01-15 13:46:15,442 - INFO - adminka.py - Image person1.jpg deleted and removed from groups.
+2025-01-15 13:46:15,446 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:15] "[32mPOST /delete_image/person1.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:46:15,453 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:15] "GET / HTTP/1.1" 200 -
+2025-01-15 13:46:15,497 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:15] "[36mGET /images/20241008_115243.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:46:17,571 - INFO - Main1.py - Face '20241008_115243.jpg' removed from group '1'.
+2025-01-15 13:46:17,577 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:46:17,581 - INFO - adminka.py - Image 20241008_115243.jpg deleted and removed from groups.
+2025-01-15 13:46:17,585 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:17] "[32mPOST /delete_image/20241008_115243.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:46:17,592 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:17] "GET / HTTP/1.1" 200 -
+2025-01-15 13:46:18,878 - INFO - Main1.py - Group '1' deleted.
+2025-01-15 13:46:18,884 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:46:18,888 - INFO - adminka.py - Group "1" deleted.
+2025-01-15 13:46:18,892 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:18] "[32mPOST /delete_group/1 HTTP/1.1[0m" 302 -
+2025-01-15 13:46:18,899 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:18] "GET / HTTP/1.1" 200 -
+2025-01-15 13:46:23,817 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:23] "GET / HTTP/1.1" 200 -
+2025-01-15 13:46:45,808 - INFO - Main1.py - Group 'Group 1' created.
+2025-01-15 13:46:45,814 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:46:45,818 - INFO - adminka.py - Group "Group 1" created.
+2025-01-15 13:46:45,822 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:45] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 13:46:45,829 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:46:45] "GET / HTTP/1.1" 200 -
+2025-01-15 13:55:14,179 - INFO - Main1.py - Logging system initialized with rotating file handler.
+2025-01-15 13:55:14,190 - INFO - Main1.py - Groups successfully loaded from file.
+2025-01-15 13:55:14,243 - INFO - _internal.py - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.0.4:5000
+2025-01-15 13:55:14,247 - INFO - _internal.py - [33mPress CTRL+C to quit[0m
+2025-01-15 13:55:14,513 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:55:14] "GET / HTTP/1.1" 200 -
+2025-01-15 13:55:18,408 - INFO - Main1.py - Group 'Group 1' deleted.
+2025-01-15 13:55:18,414 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:55:18,420 - INFO - adminka.py - Group "Group 1" deleted.
+2025-01-15 13:55:18,424 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:55:18] "[32mPOST /delete_group/Group%201 HTTP/1.1[0m" 302 -
+2025-01-15 13:55:18,432 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:55:18] "GET / HTTP/1.1" 200 -
+2025-01-15 13:55:20,194 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:55:20] "GET / HTTP/1.1" 200 -
+2025-01-15 13:58:07,556 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:07] "GET / HTTP/1.1" 200 -
+2025-01-15 13:58:41,019 - INFO - adminka.py - Image Face1.jpg uploaded successfully.
+2025-01-15 13:58:41,023 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:41] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 13:58:41,032 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:41] "GET / HTTP/1.1" 200 -
+2025-01-15 13:58:41,093 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:41] "GET /images/Face1.jpg HTTP/1.1" 200 -
+2025-01-15 13:58:48,297 - INFO - Main1.py - Group 'g1' created.
+2025-01-15 13:58:48,303 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:58:48,307 - INFO - adminka.py - Group "g1" created.
+2025-01-15 13:58:48,312 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:48] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 13:58:48,320 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:48] "GET / HTTP/1.1" 200 -
+2025-01-15 13:58:48,359 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:48] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:58:51,310 - INFO - Main1.py - Face 'Face1.jpg' added to group 'g1'.
+2025-01-15 13:58:51,318 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:58:51,322 - INFO - adminka.py - Face "Face1.jpg" moved to group "g1".
+2025-01-15 13:58:51,326 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:58:51] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:59:00,093 - INFO - adminka.py - Image Face2.jpg uploaded successfully.
+2025-01-15 13:59:00,098 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:00] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 13:59:00,106 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:00] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:00,159 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:00] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:00,163 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:00] "GET /images/Face2.jpg HTTP/1.1" 200 -
+2025-01-15 13:59:04,635 - INFO - Main1.py - Group 'g2' created.
+2025-01-15 13:59:04,642 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:59:04,646 - INFO - adminka.py - Group "g2" created.
+2025-01-15 13:59:04,651 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:04] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 13:59:04,658 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:04] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:04,706 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:04] "[36mGET /images/Face2.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:04,709 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:04] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:08,055 - INFO - Main1.py - Face 'Face2.jpg' added to group 'g2'.
+2025-01-15 13:59:08,061 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:59:08,064 - INFO - adminka.py - Face "Face2.jpg" moved to group "g2".
+2025-01-15 13:59:08,068 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:08] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 13:59:19,743 - INFO - Main1.py - Group 'g1' renamed to 'GroupN1'.
+2025-01-15 13:59:19,749 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:59:19,754 - INFO - adminka.py - Group "g1" renamed to "GroupN1".
+2025-01-15 13:59:19,758 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:19] "[32mPOST /rename_group HTTP/1.1[0m" 302 -
+2025-01-15 13:59:19,766 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:19] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:19,809 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:19] "[36mGET /images/Face2.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:19,812 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:19] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:34,796 - INFO - Main1.py - Group 'g2' deleted.
+2025-01-15 13:59:34,803 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:59:34,807 - INFO - adminka.py - Group "g2" deleted.
+2025-01-15 13:59:34,810 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:34] "[32mPOST /delete_group/g2 HTTP/1.1[0m" 302 -
+2025-01-15 13:59:34,818 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:34] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:34,853 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:34] "[36mGET /images/Face2.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:34,861 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:34] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:36,333 - INFO - Main1.py - Group 'GroupN1' deleted.
+2025-01-15 13:59:36,340 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 13:59:36,344 - INFO - adminka.py - Group "GroupN1" deleted.
+2025-01-15 13:59:36,349 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:36] "[32mPOST /delete_group/GroupN1 HTTP/1.1[0m" 302 -
+2025-01-15 13:59:36,356 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:36] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:36,406 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:36] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:36,412 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:36] "[36mGET /images/Face2.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:37,012 - WARNING - Main1.py - Face 'Face1.jpg' not found in any group.
+2025-01-15 13:59:37,018 - INFO - adminka.py - Image Face1.jpg deleted and removed from groups.
+2025-01-15 13:59:37,022 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:37] "[32mPOST /delete_image/Face1.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:59:37,033 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:37] "GET / HTTP/1.1" 200 -
+2025-01-15 13:59:37,075 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:37] "[36mGET /images/Face2.jpg HTTP/1.1[0m" 304 -
+2025-01-15 13:59:37,660 - WARNING - Main1.py - Face 'Face2.jpg' not found in any group.
+2025-01-15 13:59:37,666 - INFO - adminka.py - Image Face2.jpg deleted and removed from groups.
+2025-01-15 13:59:37,671 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:37] "[32mPOST /delete_image/Face2.jpg HTTP/1.1[0m" 302 -
+2025-01-15 13:59:37,678 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 13:59:37] "GET / HTTP/1.1" 200 -
+2025-01-15 14:00:05,661 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:05] "GET / HTTP/1.1" 200 -
+2025-01-15 14:00:12,480 - INFO - adminka.py - Image Face1.jpg uploaded successfully.
+2025-01-15 14:00:12,485 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:12] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 14:00:12,492 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:12] "GET / HTTP/1.1" 200 -
+2025-01-15 14:00:12,545 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:12] "GET /images/Face1.jpg HTTP/1.1" 200 -
+2025-01-15 14:00:17,295 - INFO - Main1.py - Group 'g1' created.
+2025-01-15 14:00:17,301 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:00:17,305 - INFO - adminka.py - Group "g1" created.
+2025-01-15 14:00:17,309 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:17] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 14:00:17,317 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:17] "GET / HTTP/1.1" 200 -
+2025-01-15 14:00:17,366 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:17] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 14:00:19,092 - INFO - Main1.py - Face 'Face1.jpg' added to group 'g1'.
+2025-01-15 14:00:19,098 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:00:19,102 - INFO - adminka.py - Face "Face1.jpg" moved to group "g1".
+2025-01-15 14:00:19,105 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:19] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 14:00:20,604 - INFO - Main1.py - Group 'g1' deleted.
+2025-01-15 14:00:20,610 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:00:20,614 - INFO - adminka.py - Group "g1" deleted.
+2025-01-15 14:00:20,618 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:20] "[32mPOST /delete_group/g1 HTTP/1.1[0m" 302 -
+2025-01-15 14:00:20,626 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:20] "GET / HTTP/1.1" 200 -
+2025-01-15 14:00:20,680 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:20] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 14:00:22,320 - WARNING - Main1.py - Face 'Face1.jpg' not found in any group.
+2025-01-15 14:00:22,326 - INFO - adminka.py - Image Face1.jpg deleted and removed from groups.
+2025-01-15 14:00:22,330 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:22] "[32mPOST /delete_image/Face1.jpg HTTP/1.1[0m" 302 -
+2025-01-15 14:00:22,338 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:00:22] "GET / HTTP/1.1" 200 -
+2025-01-15 14:01:01,264 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:01:01] "GET / HTTP/1.1" 200 -
+2025-01-15 14:06:47,637 - INFO - adminka.py - Image Face1.jpg uploaded successfully.
+2025-01-15 14:06:47,643 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:47] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-01-15 14:06:47,650 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:47] "GET / HTTP/1.1" 200 -
+2025-01-15 14:06:47,707 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:47] "GET /images/Face1.jpg HTTP/1.1" 200 -
+2025-01-15 14:06:51,856 - INFO - Main1.py - Group 'g1' created.
+2025-01-15 14:06:51,863 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:06:51,867 - INFO - adminka.py - Group "g1" created.
+2025-01-15 14:06:51,871 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:51] "[32mPOST /create_group HTTP/1.1[0m" 302 -
+2025-01-15 14:06:51,880 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:51] "GET / HTTP/1.1" 200 -
+2025-01-15 14:06:51,926 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:51] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 14:06:54,066 - INFO - Main1.py - Face 'Face1.jpg' added to group 'g1'.
+2025-01-15 14:06:54,073 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:06:54,076 - INFO - adminka.py - Face "Face1.jpg" moved to group "g1".
+2025-01-15 14:06:54,080 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:54] "POST /move_face_to_group HTTP/1.1" 200 -
+2025-01-15 14:06:57,116 - INFO - Main1.py - Group 'g1' deleted.
+2025-01-15 14:06:57,122 - INFO - Main1.py - Groups successfully saved to file.
+2025-01-15 14:06:57,126 - INFO - adminka.py - Group "g1" deleted.
+2025-01-15 14:06:57,130 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:57] "[32mPOST /delete_group/g1 HTTP/1.1[0m" 302 -
+2025-01-15 14:06:57,137 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:57] "GET / HTTP/1.1" 200 -
+2025-01-15 14:06:57,181 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:57] "[36mGET /images/Face1.jpg HTTP/1.1[0m" 304 -
+2025-01-15 14:06:59,568 - WARNING - Main1.py - Face 'Face1.jpg' not found in any group.
+2025-01-15 14:06:59,573 - INFO - adminka.py - Image Face1.jpg deleted and removed from groups.
+2025-01-15 14:06:59,578 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:59] "[32mPOST /delete_image/Face1.jpg HTTP/1.1[0m" 302 -
+2025-01-15 14:06:59,586 - INFO - _internal.py - 127.0.0.1 - - [15/Jan/2025 14:06:59] "GET / HTTP/1.1" 200 -
